@@ -1,0 +1,20 @@
+{
+  "extends": "@1stg/tsconfig/lib",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "eslint-plugin-sonar": ["eslint-plugin-sonar/src"],
+      "eslint-plugin-sonar/*": ["eslint-plugin-sonar/src/*"],
+      "sonarjs/*": ["SonarJS/eslint-bridge/src/*"]
+    },
+    "target": "ES2015"
+  },
+  "include": ["eslint-plugin-sonar", "scripts", "SonarJS/eslint-bridge/src"],
+  "exclude": ["eslint-plugin-sonar/tests/fixtures", "node_modules", "SonarJS"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+    "transpileOnly": true
+  }
+}

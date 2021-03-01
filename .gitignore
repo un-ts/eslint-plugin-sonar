@@ -1,0 +1,3 @@
+lib
+node_modules
+/eslint-plugin-sonar/src/rules.ts

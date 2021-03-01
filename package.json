@@ -1,0 +1,64 @@
+{
+  "name": "eslint-sonarjs",
+  "version": "0.0.0",
+  "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "SonarJS/eslint-bridge",
+    "eslint-plugin-sonar"
+  ],
+  "scripts": {
+    "build": "run-s build:rules build:lib",
+    "build:lib": "rimraf eslint-plugin-sonar/lib && rollup -c",
+    "build:rules": "ts-node -r tsconfig-paths/register scripts/build-rules",
+    "lint": "run-p lint:*",
+    "lint:es": "eslint . --cache --max-warnings 10",
+    "lint:tsc": "tsc --noEmit",
+    "prepublishOnly": "yarn build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@1stg/common-config": "^1.2.9",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.40.0",
+    "rollup-plugin-ts": "^1.3.7"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/experimental-utils": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.21.0",
+    "prettier": "^2.2.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@1stg"
+    ]
+  },
+  "eslintIgnore": [
+    "lib",
+    "node_modules",
+    "SonarJS",
+    "/eslint-plugin-sonar/src/rules.ts",
+    "**/tests/fixtures",
+    "!/.*.js"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "roots": [
+      "<rootDir>/eslint-plugin-sonar"
+    ],
+    "moduleNameMapper": {
+      "^eslint-plugin-sonar$": "<rootDir>/eslint-plugin-sonar/src",
+      "^sonarjs/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/$1"
+    }
+  },
+  "prettier": "@1stg/prettier-config",
+  "renovate": {
+    "extends": [
+      "@1stg"
+    ]
+  }
+}

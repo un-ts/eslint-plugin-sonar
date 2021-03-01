@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-sonar",
+  "version": "0.1.0",
+  "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
+  "author": "JounQin <admin@1stg.me>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "main": "lib/cjs.js",
+  "module": "lib/esm.js",
+  "typings": "lib/esm.d.ts",
+  "files": [
+    "lib"
+  ]
+}

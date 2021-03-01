@@ -14,10 +14,9 @@ const external = source =>
   EXTERNALS.some(external => new RegExp(`^${external}(\\/?|$)`).test(source))
 
 /**
- * @type {import('rollup').RollupOptions[]}
+ * @type { import('rollup').RollupOptions[] }
  */
-
-export default ['cjs', 'esm'].map(format => ({
+const configs = ['cjs', 'esm'].map(format => ({
   input: 'eslint-plugin-sonar/src/index.ts',
   plugins: [
     ts({
@@ -35,12 +34,14 @@ export default ['cjs', 'esm'].map(format => ({
       name: 'remove-unused-vue-eslint-parser',
       generateBundle(_options, bundle) {
         const chunk = bundle[`${format}.js`]
-        chunk.code = chunk.code.replace(
-          format === 'cjs'
-            ? `require('vue-eslint-parser');\n`
-            : `import 'vue-eslint-parser';\n`,
-          '',
-        )
+        if (chunk && 'code' in chunk) {
+          chunk.code = chunk.code.replace(
+            format === 'cjs'
+              ? `require('vue-eslint-parser');\n`
+              : `import 'vue-eslint-parser';\n`,
+            '',
+          )
+        }
       },
     },
   ],
@@ -51,3 +52,5 @@ export default ['cjs', 'esm'].map(format => ({
     file: `eslint-plugin-sonar/lib/${format}.js`,
   },
 }))
+
+export default configs

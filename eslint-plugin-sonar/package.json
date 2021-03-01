@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-sonar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
   "author": "JounQin <admin@1stg.me>",
   "license": "MIT",
@@ -12,5 +12,20 @@
   "typings": "lib/esm.d.ts",
   "files": [
     "lib"
-  ]
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/experimental-utils": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^7.0.0",
+    "express": "^4.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "builtin-modules": "^3.2.0",
+    "bytes": "^3.1.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-sonarjs": "^0.6.0"
+  }
 }

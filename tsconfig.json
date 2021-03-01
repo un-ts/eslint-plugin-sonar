@@ -9,8 +9,13 @@
     },
     "target": "ES2015"
   },
-  "include": ["eslint-plugin-sonar", "scripts", "SonarJS/eslint-bridge/src"],
-  "exclude": ["eslint-plugin-sonar/tests/fixtures", "node_modules", "SonarJS"],
+  "include": [
+    "eslint-plugin-sonar",
+    "scripts",
+    "SonarJS/eslint-bridge/src",
+    "SonarJS/eslint-bridge/typings"
+  ],
+  "exclude": ["eslint-plugin-sonar/tests/fixtures", "node_modules"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

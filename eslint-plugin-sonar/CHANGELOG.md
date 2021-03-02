@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.2.1...v0.2.2) (2021-03-02)
+
+
+### Bug Fixes
+
+* use @babel/eslint-parser directly as dependency ([3349dd4](https://github.com/rx-ts/eslint-plugin-sonar/commit/3349dd424444b0a5b44d9ed33498c34f236b74d0))
+
 ### 0.2.1 (2021-03-02)
 
 

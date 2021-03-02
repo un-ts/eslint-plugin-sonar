@@ -31,16 +31,20 @@ const configs = ['cjs', 'esm'].map(format => ({
       },
     }),
     {
-      name: 'remove-unused-vue-eslint-parser',
+      name: 'change-bundle-code',
       generateBundle(_options, bundle) {
         const chunk = bundle[`${format}.js`]
         if (chunk && 'code' in chunk) {
-          chunk.code = chunk.code.replace(
-            format === 'cjs'
-              ? `require('vue-eslint-parser');\n`
-              : `import 'vue-eslint-parser';\n`,
-            '',
-          )
+          chunk.code = chunk.code
+            // `babel-eslint` is legacy
+            .replace(/\bbabel-eslint\b/, '@babel/eslint-parser')
+            // remove-unused-vue-eslint-parser
+            .replace(
+              format === 'cjs'
+                ? `require('vue-eslint-parser');\n`
+                : `import 'vue-eslint-parser';\n`,
+              '',
+            )
         }
       },
     },

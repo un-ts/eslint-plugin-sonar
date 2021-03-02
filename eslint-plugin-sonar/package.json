@@ -13,6 +13,12 @@
   "files": [
     "lib"
   ],
+  "keywords": [
+    "sonarjs",
+    "eslint-plugin",
+    "eslint-plugin-sonarjs",
+    "eslint-sonarjs"
+  ],
   "peerDependencies": {
     "eslint": "^7.0.0",
     "typescript": "^4.0.0"

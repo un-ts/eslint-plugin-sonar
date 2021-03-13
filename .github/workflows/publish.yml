@@ -16,9 +16,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
       - name: Checkout submodules
-        run: git submodule update --init --recursive
+        run: git submodule update --init
       - name: Install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
       - name: Update package version
         run: |
           git config --local user.email "actions@github.com"

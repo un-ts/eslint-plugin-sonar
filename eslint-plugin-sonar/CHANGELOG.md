@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.2.2...v0.2.3) (2021-03-13)
+
+
+### Bug Fixes
+
+* relax deps range, add rules list into README ([dc4ab2b](https://github.com/rx-ts/eslint-plugin-sonar/commit/dc4ab2b50c3841ed129f1e77d31d3369d998137f))
+
 ### [0.2.2](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.2.1...v0.2.2) (2021-03-02)
 
 ### Bug Fixes

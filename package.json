@@ -47,6 +47,7 @@
     "/SonarJS",
     "/eslint-plugin-sonar/src/rules.ts",
     "tests/fixtures",
+    "CHANGELOG.md",
     "!/.*.js"
   ],
   "jest": {

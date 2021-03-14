@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.3.0...v0.4.0) (2021-03-14)
+
+
+### Features
+
+* disable some redundant rules for ts files, remove strict config ([3257cd3](https://github.com/rx-ts/eslint-plugin-sonar/commit/3257cd33c4ada40fcd29210cdea82b88d009112c))
+
 ## [0.3.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.2.3...v0.3.0) (2021-03-14)
 
 

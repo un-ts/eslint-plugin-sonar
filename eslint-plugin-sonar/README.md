@@ -58,8 +58,7 @@ npm install -D eslint-plugin-sonar
   "extends": [
     // only one of the following is needed to be enabled
     "plugin:sonar/base",
-    "plugin:sonar/recommended",
-    "plugin:sonar/strict"
+    "plugin:sonar/recommended"
   ]
 }
 ```
@@ -252,7 +251,5 @@ Detailed changes for each release are documented in [CHANGELOG.md](https://githu
 [MIT][] © [JounQin][]@[1stG.me][]
 
 [1stg.me]: https://www.1stg.me
-[eslint]: https://eslint.org
 [jounqin]: https://GitHub.com/JounQin
 [mit]: http://opensource.org/licenses/MIT
-[tslint]: https://github.com/palantir/tslint

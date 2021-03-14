@@ -15,7 +15,7 @@
     "build:readme": "ts-node -r tsconfig-paths/register scripts/readme",
     "build:rules": "ts-node -r tsconfig-paths/register scripts/rules",
     "lint": "run-p lint:*",
-    "lint:es": "eslint . --cache --max-warnings 10",
+    "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
     "postinstall": "yarn-deduplicate --strategy fewer || exit 0",
     "release": "cd eslint-plugin-sonar && standard-version -a --release-as",

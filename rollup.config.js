@@ -45,16 +45,17 @@ const configs = ['cjs', 'esm'].map(format => ({
                 : `import 'vue-eslint-parser';\n`,
               '',
             )
+            .replace(/console\.log\([^)]+\);?/, '')
         }
       },
     },
   ],
-  external,
   output: {
     format: /** @type {import('rollup').ModuleFormat} */ (format),
     sourcemap: true,
     file: `eslint-plugin-sonar/lib/${format}.js`,
   },
+  external,
 }))
 
 export default configs

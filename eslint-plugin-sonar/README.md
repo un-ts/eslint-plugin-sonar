@@ -2,7 +2,71 @@
 
 [ESLint](https://github.com/eslint/eslint) rules extracted from [SonarJS](https://github.com/SonarSource/SonarJS)
 
-<!-- placeholder -->
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx-ts/eslint-plugin-sonar/Publish%20package)](https://github.com/rx-ts/eslint-plugin-sonar/actions?query=workflow%3A%22Publish+package%22)
+[![Codacy Grade](https://img.shields.io/codacy/grade/5c70cd4efc864eb3b344e32be9aecce8)](https://www.codacy.com/app/JounQin/eslint-plugin-sonar)
+[![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Ftslint-config-eslint%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
+[![npm](https://img.shields.io/npm/v/eslint-plugin-sonar.svg)](https://www.npmjs.com/package/eslint-plugin-sonar)
+[![GitHub release](https://img.shields.io/github/release/rx-ts/eslint-plugin-sonar)](https://github.com/rx-ts/eslint-plugin-sonar/releases)
+
+[![David Peer](https://img.shields.io/david/peer/rx-ts/eslint-plugin-sonar.svg)](https://david-dm.org/rx-ts/eslint-plugin-sonar?type=peer)
+[![David](https://img.shields.io/david/rx-ts/eslint-plugin-sonar.svg)](https://david-dm.org/rx-ts/eslint-plugin-sonar)
+[![David Dev](https://img.shields.io/david/dev/rx-ts/eslint-plugin-sonar.svg)](https://david-dm.org/rx-ts/eslint-plugin-sonar?type=dev)
+
+[![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![codechecks.io](https://raw.githubusercontent.com/codechecks/docs/master/images/badges/badge-default.svg?sanitize=true)](https://codechecks.io)
+
+## TOC <!-- omit in toc -->
+
+- [Usage](#usage)
+  - [Install](#install)
+  - [Enable rules manually](#enable-rules-manually)
+  - [Extends configs](#extends-configs)
+- [Rule list](#rule-list)
+- [Changelog](#changelog)
+- [License](#license)
+
+## Usage
+
+### Install
+
+```sh
+# yarn
+yarn add -D eslint-plugin-sonar
+
+# npm
+npm install -D eslint-plugin-sonar
+```
+
+### Enable rules manually
+
+```jsonc
+// .eslintrc
+{
+  "plugins": ["sonar"],
+  "rules": {
+    "sonar/deprecation": 1
+  }
+}
+```
+
+### Extends configs
+
+```jsonc
+{
+  "extends": [
+    // only one of the following is needed to be enabled
+    "plugin:sonar/base",
+    "plugin:sonar/recommended",
+    "plugin:sonar/strict"
+  ]
+}
+```
+
+## Rule list
+
+<!-- prefix placeholder -->
 
 | rule name                              | detail link                                       |
 | -------------------------------------- | ------------------------------------------------- |
@@ -176,3 +240,19 @@
 | `x-powered-by`                         | <https://jira.sonarsource.com/browse/RSPEC-5689>  |
 | `xml-parser-xxe`                       | <https://jira.sonarsource.com/browse/RSPEC-2755>  |
 | `xpath`                                | <https://jira.sonarsource.com/browse/RSPEC-4817>  |
+
+<!-- suffix placeholder -->
+
+## Changelog
+
+Detailed changes for each release are documented in [CHANGELOG.md](https://github.com/rx-ts/eslint-plugin-sonar/blob/HEAD/eslint-plugin-sonar/CHANGELOG.md).
+
+## License
+
+[MIT][] © [JounQin][]@[1stG.me][]
+
+[1stg.me]: https://www.1stg.me
+[eslint]: https://eslint.org
+[jounqin]: https://GitHub.com/JounQin
+[mit]: http://opensource.org/licenses/MIT
+[tslint]: https://github.com/palantir/tslint

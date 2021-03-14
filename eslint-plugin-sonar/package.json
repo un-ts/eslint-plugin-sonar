@@ -2,6 +2,7 @@
   "name": "eslint-plugin-sonar",
   "version": "0.3.0",
   "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
+  "homepage": "https://github.com/rx-ts/eslint-plugin-sonar/tree/main/eslint-plugin-sonar",
   "author": "JounQin <admin@1stg.me>",
   "license": "MIT",
   "engines": {

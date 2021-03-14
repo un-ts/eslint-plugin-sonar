@@ -24,6 +24,8 @@
   - [Enable rules manually](#enable-rules-manually)
   - [Extends configs](#extends-configs)
 - [Rule list](#rule-list)
+- [Changelog](#changelog)
+- [License](#license)
 
 ## Usage
 
@@ -64,7 +66,7 @@ npm install -D eslint-plugin-sonar
 
 ## Rule list
 
-<!-- placeholder -->
+<!-- prefix placeholder -->
 
 | rule name                              | detail link                                       |
 | -------------------------------------- | ------------------------------------------------- |
@@ -238,3 +240,19 @@ npm install -D eslint-plugin-sonar
 | `x-powered-by`                         | <https://jira.sonarsource.com/browse/RSPEC-5689>  |
 | `xml-parser-xxe`                       | <https://jira.sonarsource.com/browse/RSPEC-2755>  |
 | `xpath`                                | <https://jira.sonarsource.com/browse/RSPEC-4817>  |
+
+<!-- suffix placeholder -->
+
+## Changelog
+
+Detailed changes for each release are documented in [CHANGELOG.md](https://github.com/rx-ts/eslint-plugin-sonar/blob/HEAD/eslint-plugin-sonar/CHANGELOG.md).
+
+## License
+
+[MIT][] © [JounQin][]@[1stG.me][]
+
+[1stg.me]: https://www.1stg.me
+[eslint]: https://eslint.org
+[jounqin]: https://GitHub.com/JounQin
+[mit]: http://opensource.org/licenses/MIT
+[tslint]: https://github.com/palantir/tslint

@@ -18,23 +18,26 @@ const ruleNames = Object.keys(rules)
 const srcPath = 'README.md'
 const destPath = 'eslint-plugin-sonar/README.md'
 
-const PLACEHOLDER = '<!-- placeholder -->'
+const prefixPlaceholder = '<!-- prefix placeholder -->'
+const suffixPlaceholder = '<!-- suffix placeholder -->'
 
 const srcContent = fs.readFileSync(srcPath, 'utf8')
 
-const prefixContent = srcContent.slice(
+const prefix = srcContent.slice(
   0,
-  srcContent.indexOf(PLACEHOLDER) + PLACEHOLDER.length,
+  srcContent.indexOf(prefixPlaceholder) + prefixPlaceholder.length,
 )
 
+const suffix = srcContent.slice(srcContent.lastIndexOf(suffixPlaceholder))
+
 const destContent = prettier.format(
-  `${prefixContent}
+  `${prefix}
 | rule name | detail link |
 | --------- | ----------- |
 ${ruleNames
   .map(rule => '| `' + rule + '` | ' + wrapLink(getRuleDetailLink(rule)) + ' |')
   .join('\n')}
-`,
+${suffix}`,
   {
     ...prettier.resolveConfig.sync(srcPath),
     parser: 'markdown',

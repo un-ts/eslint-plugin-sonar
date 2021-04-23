@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.4.0...v0.5.0) (2021-04-23)
+
+
+### Features
+
+* synchronize with SonarJS, bump deps ([e00f51f](https://github.com/rx-ts/eslint-plugin-sonar/commit/e00f51f0fccd03f5752baf8837605ab96620b002))
+
 ## [0.4.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.3.0...v0.4.0) (2021-03-14)
 
 

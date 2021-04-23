@@ -9,9 +9,11 @@ const RILES_DEST_FILE = 'eslint-plugin-sonar/src/rules.ts'
 
 // TODO: find out any solutions
 const EXCLUDED_RULES = new Set([
+  'accessor-pairs-decorator',
   'cookie-flag-check',
   'lva',
   'main',
+  'no-redeclare-decorator',
   'no-unused-expressions-decorator',
   'prefer-template-decorator',
   'reachingDefinitions',

@@ -8,10 +8,27 @@ import pkg from './SonarJS/eslint-bridge/package.json'
 const EXTERNALS = [...builtinModules, ...Object.keys(pkg.dependencies)]
 
 /**
- * @param {string} source
+ * @param {string} source source file
+ * @returns {boolean} should source file be externalized
  */
 const external = source =>
   EXTERNALS.some(external => new RegExp(`^${external}(\\/?|$)`).test(source))
+
+/**
+ * @param {string} content file content
+ * @param {string} format output format
+ * @param {string[]} deps dependency name list
+ * @returns {string} replaced content
+ */
+const removeUnusedDeps = (content, format, ...deps) => {
+  for (const dep of deps) {
+    content = content.replace(
+      format === 'cjs' ? `require('${dep}');\n` : `import '${dep}';\n`,
+      '',
+    )
+  }
+  return content
+}
 
 /**
  * @type { import('rollup').RollupOptions[] }
@@ -35,17 +52,12 @@ const configs = ['cjs', 'esm'].map(format => ({
       generateBundle(_options, bundle) {
         const chunk = bundle[`${format}.js`]
         if (chunk && 'code' in chunk) {
-          chunk.code = chunk.code
-            // `babel-eslint` is legacy
-            .replace(/\bbabel-eslint\b/, '@babel/eslint-parser')
-            // remove-unused-vue-eslint-parser
-            .replace(
-              format === 'cjs'
-                ? `require('vue-eslint-parser');\n`
-                : `import 'vue-eslint-parser';\n`,
-              '',
-            )
-            .replace(/console\.log\([^)]+\);?/, '')
+          chunk.code = removeUnusedDeps(
+            chunk.code,
+            format,
+            'vue-eslint-parser',
+            '@typescript-eslint/parser',
+          )
         }
       },
     },

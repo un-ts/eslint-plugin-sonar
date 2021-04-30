@@ -1999,7 +1999,7 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@4.22.0", "@typescript-eslint/experimental-utils@^4.0.0", "@typescript-eslint/experimental-utils@^4.0.1", "@typescript-eslint/experimental-utils@^4.22.0":
+"@typescript-eslint/experimental-utils@4.22.0", "@typescript-eslint/experimental-utils@^4.0.0", "@typescript-eslint/experimental-utils@^4.0.1":
   version "4.22.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.22.0.tgz#68765167cca531178e7b650a53456e6e0bef3b1f"
   integrity sha512-xJXHHl6TuAxB5AWiVrGhvbGL8/hbiCQ8FiWwObO3r0fnvBdrbWEDy1hlvGQOAWc6qsCWuWMKdVWlLAEMpxnddg==
@@ -3832,10 +3832,24 @@ eslint-plugin-react@^7.23.2:
     resolve "^2.0.0-next.3"
     string.prototype.matchall "^4.0.4"
 
-eslint-plugin-sonarjs@0.6.0, eslint-plugin-sonarjs@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.6.0.tgz#3ee3b04f1f9587ef02b255a5d2f96e500c4789bb"
-  integrity sha512-y+sXXWsYVW2kNEjmZI87laFspwC/hic7wyMjsPFoST8aQ2hESUVavkZjnTeVdHMOmlmcloKkyX/GJJetmfBY4Q==
+eslint-plugin-sonar@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sonar/-/eslint-plugin-sonar-0.4.0.tgz#f94e24c53cdb3c61f5568ec98621f8cb006689fa"
+  integrity sha512-6s5TgucZS8zBiLvCgoSQVinmg7VjSrJTraFvpfTRcX6qk18BXthY2XNZBdmP7jfzsGyIiwc6yKOqxkhZLUNgFw==
+  dependencies:
+    "@babel/eslint-parser" "^7.0.0"
+    "@typescript-eslint/eslint-plugin" "^4.0.0"
+    "@typescript-eslint/experimental-utils" "^4.0.0"
+    "@typescript-eslint/parser" "^4.0.0"
+    builtin-modules "^3.0.0"
+    bytes "^3.0.0"
+    eslint-plugin-chai-friendly "^0.5.0 || ^0.6.0"
+    eslint-plugin-sonarjs "^0.6.0"
+
+eslint-plugin-sonarjs@0.7.1-102, eslint-plugin-sonarjs@^0.6.0, eslint-plugin-sonarjs@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.7.0.tgz#2dbad45e03a6a4de687756b659e88bf3f977383f"
+  integrity sha512-vi6zGkd5Eznc32AQlleWUOMrMeDiUih9wR7nPPfrDCyVRmwYNHIBRPZGv1EgXwELwaPghCSvoAoHoR7uSbBF/Q==
 
 eslint-plugin-svelte3@^3.1.2:
   version "3.1.2"

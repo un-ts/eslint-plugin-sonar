@@ -103,7 +103,7 @@ export const recommended: Linter.Config = {
     'sonar/array-constructor': 2,
     'sonar/class-prototype': 2,
     'sonar/destructuring-assignment-syntax': 2,
-    'sonar/function-name': [2, { format: '^_?[a-z][a-zA-Z0-9]*\\$?$' }],
+    'sonar/function-name': [2, { format: '^_?[a-zA-Z][a-zA-Z0-9]*\\$?$' }],
     'sonar/future-reserved-words': 2,
     'sonar/max-union-size': [1, 5],
     'sonar/misplaced-loop-counter': 2,

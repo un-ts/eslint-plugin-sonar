@@ -30,10 +30,8 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/experimental-utils": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
+    "eslint-plugin-sonarjs": "^0.7.0",
     "prettier": "^2.2.1"
   },
   "commitlint": {

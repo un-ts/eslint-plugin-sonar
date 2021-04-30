@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.5.0...v0.5.1) (2021-04-30)
+
+
+### Bug Fixes
+
+* accept A-Z started function name ([eece6dc](https://github.com/rx-ts/eslint-plugin-sonar/commit/eece6dc95227abc72952a2387d97a55a93aa48b0))
+
 ## [0.5.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.4.0...v0.5.0) (2021-04-23)
 
 

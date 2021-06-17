@@ -19,13 +19,15 @@
     "lint:tsc": "tsc --noEmit",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
     "release": "cd eslint-plugin-sonar && standard-version -a --release-as",
-    "test": "jest"
+    "test": "jest",
+    "typecov": "type-coverage"
   },
   "devDependencies": {
     "@1stg/common-config": "^2.2.0",
     "rollup": "^2.52.0",
     "rollup-plugin-ts": "^1.4.0",
-    "standard-version": "^9.3.0"
+    "standard-version": "^9.3.0",
+    "type-coverage": "^2.17.5"
   },
   "resolutions": {
     "@babel/core": "^7.14.6",
@@ -68,5 +70,17 @@
     "extends": [
       "@1stg"
     ]
+  },
+  "typeCoverage": {
+    "atLeast": 99.92,
+    "cache": true,
+    "detail": true,
+    "ignoreCatch": true,
+    "ignoreFiles": [
+      "SonarJS/**/*.ts"
+    ],
+    "ignoreNonNullAssertion": true,
+    "strict": true,
+    "update": true
   }
 }

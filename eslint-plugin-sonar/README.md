@@ -132,6 +132,7 @@ npm install -D eslint-plugin-sonar
 | `new-operator-misuse`                  | <https://jira.sonarsource.com/browse/RSPEC-2999>  |
 | `no-accessor-field-mismatch`           | <https://jira.sonarsource.com/browse/RSPEC-4275>  |
 | `no-alphabetical-sort`                 | <https://jira.sonarsource.com/browse/RSPEC-2871>  |
+| `no-angular-bypass-sanitization`       | <https://jira.sonarsource.com/browse/RSPEC-6268>  |
 | `no-array-delete`                      | <https://jira.sonarsource.com/browse/RSPEC-2870>  |
 | `no-associative-arrays`                | <https://jira.sonarsource.com/browse/RSPEC-3579>  |
 | `no-built-in-override`                 | <https://jira.sonarsource.com/browse/RSPEC-2424>  |

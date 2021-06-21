@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.6.0...v0.6.1) (2021-06-21)
+
+
+### Bug Fixes
+
+* tag.text could be string on ts<=4.2 ([c0f3c89](https://github.com/rx-ts/eslint-plugin-sonar/commit/c0f3c895a4db7ff4245b419b038d95cefc3fa54d))
+
 ## [0.6.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.5.1...v0.6.0) (2021-06-17)
 
 

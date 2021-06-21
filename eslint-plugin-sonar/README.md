@@ -191,6 +191,7 @@ npm install -D eslint-plugin-sonar
 | `no-useless-increment`                 | <https://jira.sonarsource.com/browse/RSPEC-2123>  |
 | `no-useless-intersection`              | <https://jira.sonarsource.com/browse/RSPEC-4335>  |
 | `no-variable-usage-before-declaration` | <https://jira.sonarsource.com/browse/RSPEC-1526>  |
+| `no-vue-bypass-sanitization`           | N/A                                               |
 | `no-weak-cipher`                       | N/A                                               |
 | `no-weak-keys`                         | <https://jira.sonarsource.com/browse/RSPEC-4426>  |
 | `no-wildcard-import`                   | <https://jira.sonarsource.com/browse/RSPEC-2208>  |

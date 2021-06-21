@@ -1,0 +1,19 @@
+diff --git a/eslint-bridge/src/rules/deprecation.ts b/eslint-bridge/src/rules/deprecation.ts
+index 558c04417..54eda4a8c 100644
+--- a/eslint-bridge/src/rules/deprecation.ts
++++ b/eslint-bridge/src/rules/deprecation.ts
+@@ -178,7 +178,13 @@ function isCallExpression(
+ function getJsDocDeprecation(tags: ts.JSDocTagInfo[]): Deprecation | undefined {
+   for (const tag of tags) {
+     if (tag.name === 'deprecated') {
+-      return tag.text ? { reason: tag.text.map(e => e.text).join(' ') } : new Deprecation();
++      return tag.text
++        ? {
++            reason:
++              // compatible with <=4.2.*
++              typeof tag.text === 'string' ? tag.text : tag.text.map(e => e.text).join(' '),
++          }
++        : new Deprecation();
+     }
+   }
+   return undefined;

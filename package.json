@@ -17,7 +17,7 @@
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
-    "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
+    "prepare": "simple-git-hooks && ts-node scripts/patch && yarn-deduplicate --strategy fewer || exit 0",
     "release": "cd eslint-plugin-sonar && standard-version -a --release-as",
     "test": "jest",
     "typecov": "type-coverage"

@@ -34,7 +34,7 @@
     "@babel/eslint-parser": "^7.14.7",
     "eslint": "^7.28.0",
     "eslint-plugin-sonarjs": "^0.8.0-125",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.2"
   },
   "commitlint": {
     "extends": [

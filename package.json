@@ -32,7 +32,7 @@
   "resolutions": {
     "@babel/core": "^7.14.8",
     "@babel/eslint-parser": "^7.14.7",
-    "eslint": "^7.28.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-sonarjs": "^0.8.0-125",
     "prettier": "^2.3.2"
   },

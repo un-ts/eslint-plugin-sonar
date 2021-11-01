@@ -23,7 +23,7 @@
     "typecov": "type-coverage"
   },
   "devDependencies": {
-    "@1stg/common-config": "^2.3.1",
+    "@1stg/common-config": "^2.5.2",
     "rollup": "^2.52.4",
     "rollup-plugin-ts": "^1.4.7",
     "standard-version": "^9.3.2",

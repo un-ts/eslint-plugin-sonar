@@ -23,18 +23,18 @@
     "typecov": "type-coverage"
   },
   "devDependencies": {
-    "@1stg/common-config": "^2.2.0",
-    "rollup": "^2.52.0",
-    "rollup-plugin-ts": "^1.4.0",
-    "standard-version": "^9.3.0",
-    "type-coverage": "^2.17.5"
+    "@1stg/common-config": "^3.0.0",
+    "rollup": "^2.67.1",
+    "rollup-plugin-ts": "^2.0.5",
+    "standard-version": "^9.3.2",
+    "type-coverage": "^2.21.0"
   },
   "resolutions": {
-    "@babel/core": "^7.14.6",
-    "@babel/eslint-parser": "^7.14.5",
-    "eslint": "^7.28.0",
-    "eslint-plugin-sonarjs": "^0.8.0-125",
-    "prettier": "^2.3.1"
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/experimental-utils": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "@typescript-eslint/scope-manager": "^5.10.2",
+    "prettier": "^2.5.1"
   },
   "commitlint": {
     "extends": [
@@ -72,7 +72,7 @@
     ]
   },
   "typeCoverage": {
-    "atLeast": 99.92,
+    "atLeast": 100,
     "cache": true,
     "detail": true,
     "ignoreCatch": true,

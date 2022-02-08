@@ -8,9 +8,13 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "main": "lib/cjs.js",
-  "module": "lib/esm.js",
-  "typings": "lib/esm.d.ts",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
+  "exports": {
+    "import": "./lib/index.js",
+    "require": "./lib/index.cjs"
+  },
+  "typings": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -21,13 +25,13 @@
     "eslint-sonarjs"
   ],
   "peerDependencies": {
-    "eslint": "^7.0.0",
+    "eslint": "^7.0.0 || ^8.0.0",
     "typescript": "^4.0.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.14.5",
+    "@babel/eslint-parser": "^7.17.0",
     "builtin-modules": "^3.2.0",
-    "bytes": "^3.1.0",
-    "eslint-plugin-sonarjs": "^0.8.0-125"
+    "bytes": "^3.1.2",
+    "eslint-plugin-sonarjs": "^0.10.0"
   }
 }

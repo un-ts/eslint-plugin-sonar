@@ -3,7 +3,7 @@
 [ESLint](https://github.com/eslint/eslint) rules extracted from [SonarJS](https://github.com/SonarSource/SonarJS)
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rx-ts/eslint-plugin-sonar/Publish%20package)](https://github.com/rx-ts/eslint-plugin-sonar/actions?query=workflow%3A%22Publish+package%22)
-[![Codacy Grade](https://img.shields.io/codacy/grade/5c70cd4efc864eb3b344e32be9aecce8)](https://www.codacy.com/app/JounQin/eslint-plugin-sonar)
+[![Codacy Grade](https://img.shields.io/codacy/grade/a4c5a34005074f5eaf80a98854bfa8f5)](https://app.codacy.com/gh/rx-ts/eslint-plugin-sonar)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Feslint-plugin-sonar%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-sonar.svg)](https://www.npmjs.com/package/eslint-plugin-sonar)
 [![GitHub release](https://img.shields.io/github/release/rx-ts/eslint-plugin-sonar)](https://github.com/rx-ts/eslint-plugin-sonar/releases)
@@ -68,21 +68,25 @@ npm install -D eslint-plugin-sonar
 
 | rule name                              | detail link                                       |
 | -------------------------------------- | ------------------------------------------------- |
+| `anchor-precedence`                    | N/A                                               |
 | `argument-type`                        | <https://jira.sonarsource.com/browse/RSPEC-3782>  |
 | `arguments-order`                      | <https://jira.sonarsource.com/browse/RSPEC-2234>  |
 | `arguments-usage`                      | <https://jira.sonarsource.com/browse/RSPEC-3513>  |
 | `array-callback-without-return`        | <https://jira.sonarsource.com/browse/RSPEC-3796>  |
 | `array-constructor`                    | N/A                                               |
 | `arrow-function-convention`            | <https://jira.sonarsource.com/browse/RSPEC-3524>  |
+| `assertions-in-tests`                  | N/A                                               |
 | `bitwise-operators`                    | <https://jira.sonarsource.com/browse/RSPEC-1529>  |
 | `bool-param-default`                   | <https://jira.sonarsource.com/browse/RSPEC-4798>  |
 | `call-argument-line`                   | <https://jira.sonarsource.com/browse/RSPEC-1472>  |
 | `certificate-transparency`             | <https://jira.sonarsource.com/browse/RSPEC-5742>  |
+| `chai-determinate-assertion`           | N/A                                               |
 | `class-name`                           | <https://jira.sonarsource.com/browse/RSPEC-101>   |
 | `class-prototype`                      | <https://jira.sonarsource.com/browse/RSPEC-3525>  |
 | `code-eval`                            | <https://jira.sonarsource.com/browse/RSPEC-1523>  |
 | `comma-or-logical-or-case`             | <https://jira.sonarsource.com/browse/RSPEC-3616>  |
 | `comment-regex`                        | <https://jira.sonarsource.com/browse/RSPEC-124>   |
+| `concise-regex`                        | N/A                                               |
 | `conditional-indentation`              | <https://jira.sonarsource.com/browse/RSPEC-3973>  |
 | `confidential-information-logging`     | <https://jira.sonarsource.com/browse/RSPEC-5757>  |
 | `constructor-for-side-effects`         | <https://jira.sonarsource.com/browse/RSPEC-1848>  |
@@ -99,10 +103,13 @@ npm install -D eslint-plugin-sonar
 | `different-types-comparison`           | <https://jira.sonarsource.com/browse/RSPEC-3403>  |
 | `disabled-auto-escaping`               | <https://jira.sonarsource.com/browse/RSPEC-5247>  |
 | `disabled-resource-integrity`          | <https://jira.sonarsource.com/browse/RSPEC-5725>  |
+| `disabled-timeout`                     | N/A                                               |
 | `dns-prefetching`                      | <https://jira.sonarsource.com/browse/RSPEC-5743>  |
-| `elseif-without-else`                  | <https://jira.sonarsource.com/browse/RSPEC-126>   |
+| `duplicates-in-character-class`        | N/A                                               |
+| `empty-string-repetition`              | N/A                                               |
 | `encryption-secure-mode`               | N/A                                               |
 | `encryption`                           | <https://jira.sonarsource.com/browse/RSPEC-4787>  |
+| `existing-groups`                      | N/A                                               |
 | `expression-complexity`                | <https://jira.sonarsource.com/browse/RSPEC-1067>  |
 | `file-header`                          | <https://jira.sonarsource.com/browse/RSPEC-1451>  |
 | `file-name-differ-from-class`          | <https://jira.sonarsource.com/browse/RSPEC-3317>  |
@@ -117,13 +124,14 @@ npm install -D eslint-plugin-sonar
 | `function-return-type`                 | <https://jira.sonarsource.com/browse/RSPEC-3800>  |
 | `future-reserved-words`                | <https://jira.sonarsource.com/browse/RSPEC-1527>  |
 | `generator-without-yield`              | N/A                                               |
-| `hashing`                              | <https://jira.sonarsource.com/browse/RSPEC-4790>  |
+| `hashing`                              | N/A                                               |
 | `hidden-files`                         | <https://jira.sonarsource.com/browse/RSPEC-5691>  |
 | `in-operator-type-error`               | <https://jira.sonarsource.com/browse/RSPEC-3785>  |
 | `inconsistent-function-call`           | <https://jira.sonarsource.com/browse/RSPEC-3686>  |
 | `index-of-compare-to-positive-number`  | <https://jira.sonarsource.com/browse/RSPEC-2692>  |
 | `insecure-cookie`                      | <https://jira.sonarsource.com/browse/RSPEC-2092>  |
 | `insecure-jwt-token`                   | <https://jira.sonarsource.com/browse/RSPEC-5659>  |
+| `inverted-assertion-arguments`         | N/A                                               |
 | `label-position`                       | <https://jira.sonarsource.com/browse/RSPEC-1439>  |
 | `max-union-size`                       | <https://jira.sonarsource.com/browse/RSPEC-4622>  |
 | `misplaced-loop-counter`               | <https://jira.sonarsource.com/browse/RSPEC-1994>  |
@@ -137,23 +145,25 @@ npm install -D eslint-plugin-sonar
 | `no-built-in-override`                 | <https://jira.sonarsource.com/browse/RSPEC-2424>  |
 | `no-case-label-in-switch`              | <https://jira.sonarsource.com/browse/RSPEC-1219>  |
 | `no-clear-text-protocols`              | <https://jira.sonarsource.com/browse/RSPEC-5332>  |
+| `no-code-after-done`                   | N/A                                               |
 | `no-commented-code`                    | <https://jira.sonarsource.com/browse/RSPEC-125>   |
 | `no-dead-store`                        | <https://jira.sonarsource.com/browse/RSPEC-1854>  |
 | `no-delete-var`                        | <https://jira.sonarsource.com/browse/RSPEC-3001>  |
 | `no-duplicate-in-composite`            | <https://jira.sonarsource.com/browse/RSPEC-4621>  |
-| `no-empty-collection`                  | <https://jira.sonarsource.com/browse/RSPEC-4158>  |
+| `no-empty-after-reluctant`             | N/A                                               |
+| `no-empty-alternatives`                | N/A                                               |
+| `no-empty-group`                       | N/A                                               |
 | `no-equals-in-for-termination`         | <https://jira.sonarsource.com/browse/RSPEC-888>   |
 | `no-for-in-iterable`                   | <https://jira.sonarsource.com/browse/RSPEC-4139>  |
 | `no-function-declaration-in-block`     | <https://jira.sonarsource.com/browse/RSPEC-1530>  |
 | `no-global-this`                       | <https://jira.sonarsource.com/browse/RSPEC-2990>  |
 | `no-globals-shadowing`                 | <https://jira.sonarsource.com/browse/RSPEC-2137>  |
-| `no-gratuitous-expressions`            | <https://jira.sonarsource.com/browse/RSPEC-2589>  |
 | `no-hardcoded-credentials`             | <https://jira.sonarsource.com/browse/RSPEC-2068>  |
 | `no-hardcoded-ip`                      | <https://jira.sonarsource.com/browse/RSPEC-1313>  |
-| `no-ignored-return`                    | <https://jira.sonarsource.com/browse/RSPEC-2201>  |
 | `no-implicit-dependencies`             | <https://jira.sonarsource.com/browse/RSPEC-4328>  |
 | `no-implicit-global`                   | <https://jira.sonarsource.com/browse/RSPEC-2703>  |
 | `no-in-misuse`                         | <https://jira.sonarsource.com/browse/RSPEC-4619>  |
+| `no-incomplete-assertions`             | N/A                                               |
 | `no-inconsistent-returns`              | <https://jira.sonarsource.com/browse/RSPEC-3801>  |
 | `no-incorrect-string-concat`           | <https://jira.sonarsource.com/browse/RSPEC-3402>  |
 | `no-infinite-loop`                     | <https://jira.sonarsource.com/browse/RSPEC-2189>  |
@@ -168,7 +178,6 @@ npm install -D eslint-plugin-sonar
 | `no-nested-assignment`                 | <https://jira.sonarsource.com/browse/RSPEC-1121>  |
 | `no-nested-conditional`                | <https://jira.sonarsource.com/browse/RSPEC-3358>  |
 | `no-nested-incdec`                     | <https://jira.sonarsource.com/browse/RSPEC-881>   |
-| `no-nested-switch`                     | <https://jira.sonarsource.com/browse/RSPEC-1821>  |
 | `no-nested-template-literals`          | <https://jira.sonarsource.com/browse/RSPEC-4624>  |
 | `no-new-symbol`                        | <https://jira.sonarsource.com/browse/RSPEC-3834>  |
 | `no-parameter-reassignment`            | <https://jira.sonarsource.com/browse/RSPEC-1226>  |
@@ -180,6 +189,7 @@ npm install -D eslint-plugin-sonar
 | `no-referrer-policy`                   | <https://jira.sonarsource.com/browse/RSPEC-5736>  |
 | `no-require-or-define`                 | <https://jira.sonarsource.com/browse/RSPEC-3533>  |
 | `no-return-type-any`                   | <https://jira.sonarsource.com/browse/RSPEC-4324>  |
+| `no-same-argument-assert`              | N/A                                               |
 | `no-tab`                               | <https://jira.sonarsource.com/browse/RSPEC-105>   |
 | `no-try-promise`                       | <https://jira.sonarsource.com/browse/RSPEC-4822>  |
 | `no-undefined-argument`                | <https://jira.sonarsource.com/browse/RSPEC-4623>  |
@@ -195,7 +205,6 @@ npm install -D eslint-plugin-sonar
 | `no-weak-cipher`                       | N/A                                               |
 | `no-weak-keys`                         | <https://jira.sonarsource.com/browse/RSPEC-4426>  |
 | `no-wildcard-import`                   | <https://jira.sonarsource.com/browse/RSPEC-2208>  |
-| `non-existent-operator`                | <https://jira.sonarsource.com/browse/RSPEC-2757>  |
 | `non-number-in-arithmetic-expression`  | <https://jira.sonarsource.com/browse/RSPEC-3760>  |
 | `null-dereference`                     | <https://jira.sonarsource.com/browse/RSPEC-22259> |
 | `operation-returning-nan`              | <https://jira.sonarsource.com/browse/RSPEC-3757>  |
@@ -208,24 +217,35 @@ npm install -D eslint-plugin-sonar
 | `production-debug`                     | <https://jira.sonarsource.com/browse/RSPEC-4507>  |
 | `pseudo-random`                        | <https://jira.sonarsource.com/browse/RSPEC-2245>  |
 | `publicly-writable-directories`        | <https://jira.sonarsource.com/browse/RSPEC-5443>  |
+| `regex-complexity`                     | N/A                                               |
 | `regular-expr`                         | <https://jira.sonarsource.com/browse/RSPEC-4784>  |
 | `session-regeneration`                 | <https://jira.sonarsource.com/browse/RSPEC-5876>  |
 | `shorthand-property-grouping`          | <https://jira.sonarsource.com/browse/RSPEC-3499>  |
+| `single-character-alternation`         | N/A                                               |
+| `slow-regex`                           | N/A                                               |
 | `sockets`                              | <https://jira.sonarsource.com/browse/RSPEC-4818>  |
 | `sonar-block-scoped-var`               | <https://jira.sonarsource.com/browse/RSPEC-2392>  |
 | `sonar-max-lines-per-function`         | <https://jira.sonarsource.com/browse/RSPEC-138>   |
 | `sonar-max-lines`                      | <https://jira.sonarsource.com/browse/RSPEC-104>   |
+| `sonar-no-control-regex`               | N/A                                               |
 | `sonar-no-fallthrough`                 | <https://jira.sonarsource.com/browse/RSPEC-128>   |
+| `sonar-no-invalid-regexp`              | N/A                                               |
+| `sonar-no-misleading-character-class`  | N/A                                               |
+| `sonar-no-regex-spaces`                | N/A                                               |
 | `sonar-no-unused-vars`                 | <https://jira.sonarsource.com/browse/RSPEC-1481>  |
 | `sql-queries`                          | <https://jira.sonarsource.com/browse/RSPEC-2077>  |
 | `standard-input`                       | <https://jira.sonarsource.com/browse/RSPEC-4829>  |
+| `stateful-regex`                       | N/A                                               |
 | `strict-transport-security`            | <https://jira.sonarsource.com/browse/RSPEC-5734>  |
 | `strings-comparison`                   | <https://jira.sonarsource.com/browse/RSPEC-3003>  |
 | `super-invocation`                     | <https://jira.sonarsource.com/browse/RSPEC-3854>  |
 | `switch-without-default`               | <https://jira.sonarsource.com/browse/RSPEC-131>   |
+| `test-check-exception`                 | N/A                                               |
 | `todo-tag`                             | <https://jira.sonarsource.com/browse/RSPEC-1135>  |
 | `too-many-break-or-continue-in-loop`   | N/A                                               |
+| `unicode-aware-regex`                  | N/A                                               |
 | `unused-import`                        | <https://jira.sonarsource.com/browse/RSPEC-1128>  |
+| `unused-named-groups`                  | N/A                                               |
 | `unverified-certificate`               | <https://jira.sonarsource.com/browse/RSPEC-4830>  |
 | `unverified-hostname`                  | <https://jira.sonarsource.com/browse/RSPEC-5667>  |
 | `updated-const-var`                    | <https://jira.sonarsource.com/browse/RSPEC-3500>  |

@@ -1,7 +1,7 @@
 // @ts-check
 
-import ts from 'rollup-plugin-ts'
 import builtinModules from 'builtin-modules'
+import ts from 'rollup-plugin-ts'
 
 import pkg from './SonarJS/eslint-bridge/package.json'
 
@@ -65,7 +65,7 @@ const configs = ['cjs', 'esm'].map(format => ({
   output: {
     format: /** @type {import('rollup').ModuleFormat} */ (format),
     sourcemap: true,
-    file: `eslint-plugin-sonar/lib/${format}.js`,
+    file: `eslint-plugin-sonar/lib/index.${format === 'cjs' ? 'cjs' : 'js'}`,
   },
   external,
 }))

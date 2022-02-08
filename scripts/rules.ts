@@ -15,8 +15,10 @@ const EXCLUDED_RULES = new Set([
   'main',
   'no-redeclare-decorator',
   'no-unused-expressions-decorator',
+  'object-shorthand-decorator',
   'prefer-template-decorator',
   'reachingDefinitions',
+  'regex-rule-template',
   'utils-express',
 ])
 

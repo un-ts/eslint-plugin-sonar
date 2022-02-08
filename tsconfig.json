@@ -7,7 +7,8 @@
       "eslint-plugin-sonar/*": ["eslint-plugin-sonar/src/*"],
       "sonarjs/*": ["SonarJS/eslint-bridge/src/*"]
     },
-    "target": "ES2015"
+    "target": "ES2015",
+    "useUnknownInCatchVariables": false
   },
   "include": [
     "eslint-plugin-sonar",

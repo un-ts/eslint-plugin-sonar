@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@1stg/common-config": "^3.0.0",
-    "rollup": "^2.67.1",
+    "rollup": "^2.68.0",
     "rollup-plugin-ts": "^2.0.5",
     "standard-version": "^9.3.2",
     "type-coverage": "^2.21.0"

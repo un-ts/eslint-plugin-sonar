@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [0.7.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.6.1...v0.7.0) (2022-03-06)
 
+### Features
+
+* sync with upstream, support ESLint 8.0 ([ce45619](https://github.com/rx-ts/eslint-plugin-sonar/commit/ce45619877aa5d212887d5c6904a7bad7e417d0e))
+
 ### [0.6.1](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.6.0...v0.6.1) (2021-06-21)
 
 

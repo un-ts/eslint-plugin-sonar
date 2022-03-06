@@ -30,6 +30,12 @@
     "type-coverage": "^2.21.0"
   },
   "resolutions": {
+    "@typescript-eslint/eslint-plugin-tslint": "^5.13.0",
+    "@typescript-eslint/experimental-utils": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "@typescript-eslint/scope-manager": "^5.13.0",
+    "@typescript-eslint/type-utils": "^5.13.0",
+    "@typescript-eslint/utils": "^5.13.0",
     "prettier": "^2.5.1"
   },
   "commitlint": {

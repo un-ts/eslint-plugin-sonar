@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.7.0...v0.7.1) (2022-03-06)
+
+
+### Bug Fixes
+
+* add missing dependency scslre ([8544241](https://github.com/rx-ts/eslint-plugin-sonar/commit/85442410118c465056c54f3236fb13c5dc9d4d49))
+
 ## [0.7.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.6.1...v0.7.0) (2022-03-06)
 
 ### Features

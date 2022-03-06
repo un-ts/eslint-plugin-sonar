@@ -16,7 +16,7 @@ const external = source =>
 
 /**
  * @param {string} content file content
- * @param {string} format output format
+ * @param {import('rollup').ModuleFormat} format output format
  * @param {string[]} deps dependency name list
  * @returns {string} replaced content
  */
@@ -31,9 +31,16 @@ const removeUnusedDeps = (content, format, ...deps) => {
 }
 
 /**
+ *
+ * @param { import('rollup').ModuleFormat } format
+ * @returns {string} filename
+ */
+const getFilename = format => `index.${format === 'cjs' ? 'cjs' : 'js'}`
+
+/**
  * @type { import('rollup').RollupOptions[] }
  */
-const configs = ['cjs', 'esm'].map(format => ({
+const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
   input: 'eslint-plugin-sonar/src/index.ts',
   plugins: [
     ts({
@@ -50,7 +57,7 @@ const configs = ['cjs', 'esm'].map(format => ({
     {
       name: 'change-bundle-code',
       generateBundle(_options, bundle) {
-        const chunk = bundle[`${format}.js`]
+        const chunk = bundle[getFilename(format)]
         if (chunk && 'code' in chunk) {
           chunk.code = removeUnusedDeps(
             chunk.code,
@@ -63,9 +70,9 @@ const configs = ['cjs', 'esm'].map(format => ({
     },
   ],
   output: {
-    format: /** @type {import('rollup').ModuleFormat} */ (format),
+    format,
     sourcemap: true,
-    file: `eslint-plugin-sonar/lib/index.${format === 'cjs' ? 'cjs' : 'js'}`,
+    file: `eslint-plugin-sonar/lib/${getFilename(format)}`,
   },
   external,
 }))

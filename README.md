@@ -149,7 +149,7 @@ npm install -D eslint-plugin-sonar
 | `no-commented-code`                    | <https://jira.sonarsource.com/browse/RSPEC-125>   |
 | `no-dead-store`                        | <https://jira.sonarsource.com/browse/RSPEC-1854>  |
 | `no-delete-var`                        | <https://jira.sonarsource.com/browse/RSPEC-3001>  |
-| `no-duplicate-in-composite`            | <https://jira.sonarsource.com/browse/RSPEC-4621>  |
+| `no-duplicate-in-composite`            | N/A                                               |
 | `no-empty-after-reluctant`             | N/A                                               |
 | `no-empty-alternatives`                | N/A                                               |
 | `no-empty-group`                       | N/A                                               |
@@ -162,7 +162,7 @@ npm install -D eslint-plugin-sonar
 | `no-hardcoded-ip`                      | <https://jira.sonarsource.com/browse/RSPEC-1313>  |
 | `no-implicit-dependencies`             | <https://jira.sonarsource.com/browse/RSPEC-4328>  |
 | `no-implicit-global`                   | <https://jira.sonarsource.com/browse/RSPEC-2703>  |
-| `no-in-misuse`                         | <https://jira.sonarsource.com/browse/RSPEC-4619>  |
+| `no-in-misuse`                         | N/A                                               |
 | `no-incomplete-assertions`             | N/A                                               |
 | `no-inconsistent-returns`              | <https://jira.sonarsource.com/browse/RSPEC-3801>  |
 | `no-incorrect-string-concat`           | <https://jira.sonarsource.com/browse/RSPEC-3402>  |
@@ -184,7 +184,7 @@ npm install -D eslint-plugin-sonar
 | `no-primitive-wrappers`                | <https://jira.sonarsource.com/browse/RSPEC-1533>  |
 | `no-redundant-assignments`             | <https://jira.sonarsource.com/browse/RSPEC-4165>  |
 | `no-redundant-optional`                | <https://jira.sonarsource.com/browse/RSPEC-4782>  |
-| `no-redundant-parentheses`             | <https://jira.sonarsource.com/browse/RSPEC-1110>  |
+| `no-redundant-parentheses`             | N/A                                               |
 | `no-reference-error`                   | <https://jira.sonarsource.com/browse/RSPEC-3827>  |
 | `no-referrer-policy`                   | <https://jira.sonarsource.com/browse/RSPEC-5736>  |
 | `no-require-or-define`                 | <https://jira.sonarsource.com/browse/RSPEC-3533>  |
@@ -212,7 +212,7 @@ npm install -D eslint-plugin-sonar
 | `post-message`                         | <https://jira.sonarsource.com/browse/RSPEC-2819>  |
 | `prefer-default-last`                  | <https://jira.sonarsource.com/browse/RSPEC-4524>  |
 | `prefer-promise-shorthand`             | <https://jira.sonarsource.com/browse/RSPEC-4634>  |
-| `prefer-type-guard`                    | <https://jira.sonarsource.com/browse/RSPEC-4322>  |
+| `prefer-type-guard`                    | N/A                                               |
 | `process-argv`                         | <https://jira.sonarsource.com/browse/RSPEC-4823>  |
 | `production-debug`                     | <https://jira.sonarsource.com/browse/RSPEC-4507>  |
 | `pseudo-random`                        | <https://jira.sonarsource.com/browse/RSPEC-2245>  |

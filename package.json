@@ -17,7 +17,7 @@
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
-    "prepare": "simple-git-hooks && ts-node scripts/patch && yarn-deduplicate --strategy fewer || exit 0",
+    "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
     "release": "cd eslint-plugin-sonar && standard-version -a --release-as",
     "test": "jest",
     "typecov": "type-coverage"
@@ -31,13 +31,14 @@
     "type-coverage": "^2.21.0"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin-tslint": "^5.13.0",
-    "@typescript-eslint/experimental-utils": "^5.13.0",
-    "@typescript-eslint/parser": "^5.13.0",
-    "@typescript-eslint/scope-manager": "^5.13.0",
-    "@typescript-eslint/type-utils": "^5.13.0",
-    "@typescript-eslint/utils": "^5.13.0",
-    "prettier": "^2.5.1"
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.17.0",
+    "@typescript-eslint/experimental-utils": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "@typescript-eslint/scope-manager": "^5.17.0",
+    "@typescript-eslint/type-utils": "^5.17.0",
+    "@typescript-eslint/utils": "^5.17.0",
+    "prettier": "^2.6.1"
   },
   "commitlint": {
     "extends": [

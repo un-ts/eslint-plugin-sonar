@@ -11,6 +11,7 @@ const RILES_DEST_FILE = 'eslint-plugin-sonar/src/rules.ts'
 const EXCLUDED_RULES = new Set([
   'accessor-pairs-decorator',
   'cookie-flag-check',
+  'decorators',
   'lva',
   'main',
   'no-redeclare-decorator',

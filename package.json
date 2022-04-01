@@ -28,7 +28,7 @@
     "rollup-plugin-ts": "^2.0.5",
     "standard-version": "^9.3.2",
     "ts-jest": "^27.1.4",
-    "type-coverage": "^2.21.0"
+    "type-coverage": "^2.21.1"
   },
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "^5.17.0",

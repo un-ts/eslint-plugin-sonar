@@ -5150,7 +5150,7 @@ min-indent@^1.0.0:
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.1.tgz#a63f681673b30571fbe8bc25686ae746eefa9869"
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
-minimatch@3, minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.2:
+"minimatch@3 || 4 || 5", minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
@@ -7304,24 +7304,24 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
-type-coverage-core@^2.21.0:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/type-coverage-core/-/type-coverage-core-2.21.0.tgz#30796802a53e212f9cc7f4c3e72053c65f690382"
-  integrity sha512-VNC7Ig0KAzpYjWvxQ1SaMufEqSm4GPSsdVaCWA5fRHSjSvkXbPVK+C6H0lIq2t8brkrvnXk7iDs9g4sjux6JQw==
+type-coverage-core@^2.21.1:
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/type-coverage-core/-/type-coverage-core-2.21.1.tgz#1c31ee7040f9a85f9910078f66f95b7b25b13008"
+  integrity sha512-TpsLOfUE/CkHFvISitoro6hJBJoDsC9gpTMnbIofMFg13JnqnpC0n4ber4D66ks42+mkqKRXg6hgUOmQ/DR2BQ==
   dependencies:
     fast-glob "3"
-    minimatch "3"
+    minimatch "3 || 4 || 5"
     normalize-path "3"
     tslib "1 || 2"
     tsutils "3"
 
-type-coverage@^2.21.0:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/type-coverage/-/type-coverage-2.21.0.tgz#c644f132fbb87051a3cea418aeed67fccfde353a"
-  integrity sha512-gsSgEhCluPAUsIf6CDftHK7qx8+jabsBZdsbqxJYP4lSbeoVZ/IHz7sb4Ylg6LLgB6PhrJOkbAYTnOhQLRK8wA==
+type-coverage@^2.21.1:
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/type-coverage/-/type-coverage-2.21.1.tgz#267269236b25fe8455b9a488355d16383ff0bd68"
+  integrity sha512-3NPFbC/LWDFuSCafxmLqBRLjxn40IP9g6j8FXXUXs5GbYDG3FBMX/s0bIc+i6nsXiifA1OvKTwSX2Az1LQMdbw==
   dependencies:
     minimist "1"
-    type-coverage-core "^2.21.0"
+    type-coverage-core "^2.21.1"
 
 type-fest@^0.18.0:
   version "0.18.1"

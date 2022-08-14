@@ -73,5 +73,8 @@
     "regexpp": "^3.2.0",
     "scslre": "^0.1.6",
     "yaml-node12": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,3 +1,15 @@
+diff --git a/eslint-bridge/package.json b/eslint-bridge/package.json
+index 7736bb86a..109369dd4 100644
+--- a/eslint-bridge/package.json
++++ b/eslint-bridge/package.json
+@@ -2,6 +2,7 @@
+   "name": "eslint-bridge",
+   "version": "1.0.0",
+   "description": "bridge between SonarJS and ESLint",
++  "private": true,
+   "scripts": {
+     "build": "npm ci && npm run check-format && npm run clear && npm run compile",
+     "clear": "tsc -b src tests --clean",
 diff --git a/eslint-bridge/src/linting/eslint/rules/helpers/lva.ts b/eslint-bridge/src/linting/eslint/rules/helpers/lva.ts
 index d42152607..7a0185397 100644
 --- a/eslint-bridge/src/linting/eslint/rules/helpers/lva.ts

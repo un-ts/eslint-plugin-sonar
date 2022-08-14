@@ -45,6 +45,7 @@
     "@typescript-eslint/type-utils": "^5.33.0",
     "@typescript-eslint/utils": "^5.33.0",
     "eslint": "^8.22.0",
+    "eslint-plugin-sonar": "link:eslint-plugin-sonar",
     "prettier": "^2.7.1"
   },
   "jest": {

@@ -6,8 +6,6 @@
 
 - [#57](https://github.com/un-ts/eslint-plugin-sonar/pull/57) [`1bb8cfd`](https://github.com/un-ts/eslint-plugin-sonar/commit/1bb8cfd75f890c3f0db93edbc6881f5a183a3f24) Thanks [@JounQin](https://github.com/JounQin)! - feat: bump SonarJS and add dependencies (#56)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
 ### [0.7.1](https://github.com/un-ts/eslint-plugin-sonar/compare/v0.7.0...v0.7.1) (2022-03-06)
 
 ### Bug Fixes

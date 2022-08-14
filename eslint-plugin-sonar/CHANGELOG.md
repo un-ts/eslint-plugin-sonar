@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [0.8.0](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.7.1...v0.8.0) (2022-03-29)
-
-
-### Features
-
-* upgrade eslint-plugin-sonarjs 0.13.0 ([a0d929f](https://github.com/rx-ts/eslint-plugin-sonar/commit/a0d929fcff97990f167d5a9fdf74fe67f0656f78))
-
 ### [0.7.1](https://github.com/rx-ts/eslint-plugin-sonar/compare/v0.7.0...v0.7.1) (2022-03-06)
 
 

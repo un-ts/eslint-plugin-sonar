@@ -1,5 +1,6 @@
 // @ts-check
 
+import alias from '@rollup/plugin-alias'
 import builtinModules from 'builtin-modules'
 import ts from 'rollup-plugin-ts'
 
@@ -43,6 +44,14 @@ const getFilename = format => `index.${format === 'cjs' ? 'cjs' : 'js'}`
 const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
   input: 'eslint-plugin-sonar/src/index.ts',
   plugins: [
+    alias({
+      entries: [
+        {
+          find: /\b(css|postcss|stylelint|yaml)\b/,
+          replacement: '',
+        },
+      ],
+    }),
     ts({
       transpileOnly: true,
       tsconfig(resolvedConfig) {

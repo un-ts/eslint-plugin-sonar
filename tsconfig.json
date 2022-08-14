@@ -20,5 +20,9 @@
     "SonarJS/eslint-bridge/src",
     "SonarJS/eslint-bridge/typings"
   ],
-  "exclude": ["eslint-plugin-sonar/test/fixtures", "node_modules"]
+  "exclude": [
+    "eslint-plugin-sonar/test/fixtures",
+    "SonarJS/eslint-bridge/src/linting/stylelint",
+    "node_modules"
+  ]
 }

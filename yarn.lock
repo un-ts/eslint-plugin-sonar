@@ -2388,6 +2388,13 @@
     "@xml-tools/parser" "^1.0.11"
     prettier ">=2.4.0"
 
+"@rollup/plugin-alias@^3.1.9":
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.9.tgz#a5d267548fe48441f34be8323fb64d1d4a1b3fdf"
+  integrity sha512-QI5fsEvm9bDzt32k39wpOwZhVzRcL5ydcffUHMyLVaVaLeC70I8TJZ17F1z1eMoLu4E/UOcH9BWVkKpIKdrfiw==
+  dependencies:
+    slash "^3.0.0"
+
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
@@ -4844,17 +4851,6 @@ eslint-plugin-simple-import-sort@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-7.0.0.tgz#a1dad262f46d2184a90095a60c66fef74727f0f8"
   integrity sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==
-
-eslint-plugin-sonar@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-sonar/-/eslint-plugin-sonar-0.8.0.tgz#c67b3da53ca3a8531e3e333891b54c1d92f1176b"
-  integrity sha512-5ZqgYIY1NSyR80v9RXbgwaK/jkHuGmuBa7ybsDEhwPydGplYvoj4zx8ahR8II7SoIOXPuzeh8HifEvKQSxu0iQ==
-  dependencies:
-    "@babel/eslint-parser" "^7.17.0"
-    builtin-modules "^3.2.0"
-    bytes "^3.1.2"
-    eslint-plugin-sonarjs "^0.13.0"
-    scslre "^0.1.6"
 
 eslint-plugin-sonarjs@0.15.0:
   version "0.15.0"
@@ -11330,7 +11326,7 @@ yaml-eslint-parser@^1.0.0, yaml-eslint-parser@^1.1.0:
     lodash "^4.17.21"
     yaml "^2.0.0"
 
-yaml-node12@1.0.0, yaml-node12@^1.0.0:
+yaml-node12@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/yaml-node12/-/yaml-node12-1.0.0.tgz#2fda423257a7ea6114064ff2c51a91b2263b968d"
   integrity sha512-8wn6HU6ZbnDt2031XtW8sHksEfeVQODV9efAj58rOuk1V69TlrcJZQBgwFFSDi9TlhTlYuv72ommnDQBaMJNhg==

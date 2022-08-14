@@ -1,13 +1,17 @@
 {
   "extends": "@1stg/tsconfig/lib",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "eslint-plugin-sonar": ["eslint-plugin-sonar/src"],
-      "eslint-plugin-sonar/*": ["eslint-plugin-sonar/src/*"],
-      "sonarjs/*": ["SonarJS/eslint-bridge/src/*"]
+      "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
+      "eslint-plugin-sonar/*": ["./eslint-plugin-sonar/src/*"],
+      "helpers": ["./SonarJS/eslint-bridge/src/helpers"],
+      "linting/*": ["./SonarJS/eslint-bridge/src/linting/*"],
+      "parsing/*": ["./SonarJS/eslint-bridge/src/parsing/*"],
+      "routing": ["./SonarJS/eslint-bridge/src/routing"],
+      "services/*": ["./SonarJS/eslint-bridge/src/services/*"],
+      "sonarjs/*": ["./SonarJS/eslint-bridge/src/linting/eslint/*"]
     },
-    "target": "ES2015",
+    "target": "ES2018",
     "useUnknownInCatchVariables": false
   },
   "include": [
@@ -16,11 +20,5 @@
     "SonarJS/eslint-bridge/src",
     "SonarJS/eslint-bridge/typings"
   ],
-  "exclude": ["eslint-plugin-sonar/tests/fixtures", "node_modules"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    },
-    "transpileOnly": true
-  }
+  "exclude": ["eslint-plugin-sonar/test/fixtures", "node_modules"]
 }

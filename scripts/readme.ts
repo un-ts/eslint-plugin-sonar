@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 
 import prettier from 'prettier'
 
@@ -8,7 +8,10 @@ const wrapLink = (link?: string) => (link ? `<${link}>` : 'N/A')
 
 const getRuleDetailLink = (rule: string) => {
   const matched = /https:\/\/jira\.sonarsource\.com\/browse\/RSPEC-\d+/.exec(
-    fs.readFileSync(`SonarJS/eslint-bridge/src/rules/${rule}.ts`, 'utf8'),
+    fs.readFileSync(
+      `SonarJS/eslint-bridge/src/linting/eslint/rules/${rule}.ts`,
+      'utf8',
+    ),
   )
   return matched?.[0]
 }

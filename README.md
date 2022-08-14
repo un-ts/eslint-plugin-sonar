@@ -6,7 +6,7 @@
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/un-ts/eslint-plugin-sonar.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/un-ts/eslint-plugin-sonar/context:javascript)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Feslint-plugin-sonar%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-sonar.svg)](https://www.npmjs.com/package/eslint-plugin-sonar)
-[![GitHub release](https://img.shields.io/github/release/rx-ts/eslint-plugin-sonar)](https://github.com/rx-ts/eslint-plugin-sonar/releases)
+[![GitHub release](https://img.shields.io/github/release/un-ts/eslint-plugin-sonar)](https://github.com/un-ts/eslint-plugin-sonar/releases)
 
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)

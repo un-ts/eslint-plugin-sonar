@@ -1,0 +1,7 @@
+{
+  "node": "16",
+  "packages": [
+    "eslint-plugin-sonar"
+  ],
+  "sandboxes": []
+}

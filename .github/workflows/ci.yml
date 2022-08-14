@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  ci:
+    name: Lint and Test with Node.js ${{ matrix.node }}
+    strategy:
+      matrix:
+        node:
+          - 14
+          - 16
+          - 18
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Patch
+        run: yarn patch
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Build, Lint and test
+        run: |
+          yarn build
+          yarn run-p lint test typecov
+        env:
+          EFF_NO_LINK_RULES: true
+          PARSER_NO_WATCH: true

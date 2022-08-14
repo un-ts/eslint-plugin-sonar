@@ -1,7 +1,7 @@
 {
   "name": "eslint-sonarjs",
   "version": "0.0.0",
-  "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
+  "repository": "git+https://github.com/un-ts/eslint-plugin-sonar.git",
   "author": "JounQin <admin@1stg.me>",
   "license": "MIT",
   "private": true,
@@ -18,15 +18,17 @@
     "lint:tsc": "tsc --noEmit",
     "patch": "cd SonarJS && git apply ../patches/SonarJS.patch || exit 0",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
-    "release": "cd eslint-plugin-sonar && standard-version -a --release-as",
+    "prerelease": "yarn build",
+    "release": "changeset publish",
     "test": "jest",
     "typecov": "type-coverage"
   },
   "devDependencies": {
     "@1stg/common-config": "^6.1.4",
+    "@changesets/changelog-github": "^0.4.6",
+    "@changesets/cli": "^2.24.3",
     "rollup": "^2.78.0",
     "rollup-plugin-ts": "^3.0.2",
-    "standard-version": "^9.5.0",
     "ts-jest": "^28.0.7",
     "tsx": "^3.8.2",
     "type-coverage": "^2.22.0",
@@ -41,7 +43,6 @@
     "@typescript-eslint/type-utils": "^5.33.0",
     "@typescript-eslint/utils": "^5.33.0",
     "eslint": "^8.22.0",
-    "eslint-plugin-sonar": "link:eslint-plugin-sonar",
     "prettier": "^2.7.1"
   },
   "commitlint": {
@@ -54,7 +55,6 @@
     "lib",
     "node_modules",
     "/SonarJS",
-    "/eslint-plugin-sonar/src/rules.ts",
     "test/fixtures",
     "CHANGELOG.md",
     "!/.github",

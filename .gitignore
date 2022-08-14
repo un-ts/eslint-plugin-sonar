@@ -2,4 +2,3 @@
 .type-coverage
 node_modules
 /eslint-plugin-sonar/lib
-/eslint-plugin-sonar/src/rules.ts

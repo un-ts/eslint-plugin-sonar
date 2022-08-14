@@ -7,12 +7,13 @@ import { rules } from 'eslint-plugin-sonar'
 const wrapLink = (link?: string) => (link ? `<${link}>` : 'N/A')
 
 const getRuleDetailLink = (rule: string) => {
-  const matched = /https:\/\/jira\.sonarsource\.com\/browse\/RSPEC-\d+/.exec(
-    fs.readFileSync(
-      `SonarJS/eslint-bridge/src/linting/eslint/rules/${rule}.ts`,
-      'utf8',
-    ),
-  )
+  const matched =
+    /https:\/\/sonarsource\.github\.io\/rspec\/#\/rspec\/S\d+\/javascript/.exec(
+      fs.readFileSync(
+        `SonarJS/eslint-bridge/src/linting/eslint/rules/${rule}.ts`,
+        'utf8',
+      ),
+    )
   return matched?.[0]
 }
 

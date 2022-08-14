@@ -2,5 +2,13 @@
   "root": true,
   "extends": [
     "@1stg"
+  ],
+  "overrides": [
+    {
+      "files": ".github/*.yml",
+      "rules": {
+        "unicorn/filename-case": "off"
+      }
+    }
   ]
 }

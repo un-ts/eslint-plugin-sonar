@@ -1,9 +1,41 @@
 {
   "name": "eslint-plugin-sonar",
   "version": "0.7.1",
-  "repository": "git+https://github.com/rx-ts/eslint-plugin-sonar.git",
-  "homepage": "https://github.com/rx-ts/eslint-plugin-sonar/tree/main/eslint-plugin-sonar",
+  "repository": "git+https://github.com/un-ts/eslint-plugin-sonar.git",
+  "homepage": "https://github.com/un-ts/eslint-plugin-sonar/tree/main/eslint-plugin-sonar",
   "author": "JounQin <admin@1stg.me>",
+  "donate": {
+    "recipients": [
+      {
+        "name": "unts",
+        "platform": "opencollective",
+        "address": "https://opencollective.com/unts",
+        "weight": 60
+      },
+      {
+        "name": "rxts",
+        "platform": "opencollective",
+        "address": "https://opencollective.com/rxts",
+        "weight": 20
+      },
+      {
+        "name": "1stG",
+        "email": "i@1stg.me",
+        "weight": 20,
+        "platforms": [
+          {
+            "platform": "opencollective",
+            "address": "https://opencollective.com/1stG"
+          },
+          {
+            "platform": "patreon",
+            "address": "https://www.patreon.com/1stG"
+          }
+        ]
+      }
+    ]
+  },
+  "funding": "https://opencollective.com/unts",
   "license": "MIT",
   "engines": {
     "node": ">=12.20"
@@ -11,9 +43,9 @@
   "main": "lib/index.cjs",
   "module": "lib/index.js",
   "exports": {
+    "types": "./lib/index.d.ts",
     "import": "./lib/index.js",
-    "require": "./lib/index.cjs",
-    "types": "./lib/index.d.ts"
+    "require": "./lib/index.cjs"
   },
   "types": "lib/index.d.ts",
   "files": [
@@ -41,5 +73,8 @@
     "regexpp": "^3.2.0",
     "scslre": "^0.1.6",
     "yaml-node12": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

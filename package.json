@@ -47,21 +47,6 @@
     "eslint": "^8.22.0",
     "prettier": "^2.7.1"
   },
-  "commitlint": {
-    "extends": [
-      "@1stg"
-    ]
-  },
-  "eslintIgnore": [
-    "coverage",
-    "lib",
-    "node_modules",
-    "/SonarJS",
-    "test/fixtures",
-    "CHANGELOG.md",
-    "!/.github",
-    "!/.*.js"
-  ],
   "jest": {
     "preset": "ts-jest",
     "roots": [
@@ -75,17 +60,6 @@
       "^services/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/services/$1",
       "^sonarjs/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/linting/eslint/$1"
     }
-  },
-  "prettier": "@1stg/prettier-config",
-  "remarkConfig": {
-    "plugins": [
-      "@1stg/remark-config"
-    ]
-  },
-  "renovate": {
-    "extends": [
-      "@1stg"
-    ]
   },
   "typeCoverage": {
     "atLeast": 100,

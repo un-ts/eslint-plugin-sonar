@@ -10,35 +10,39 @@
     "eslint-plugin-sonar"
   ],
   "scripts": {
-    "build": "run-s build:rules build:lib build:readme",
+    "build": "run-s build:lib build:readme",
     "build:lib": "rimraf eslint-plugin-sonar/lib && rollup -c",
-    "build:readme": "ts-node -r tsconfig-paths/register scripts/readme",
-    "build:rules": "ts-node -r tsconfig-paths/register scripts/rules",
+    "build:readme": "tsx scripts/readme",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
+    "patch": "cd SonarJS && git apply ../patches/SonarJS.patch || exit 0",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
     "release": "cd eslint-plugin-sonar && standard-version -a --release-as",
     "test": "jest",
     "typecov": "type-coverage"
   },
   "devDependencies": {
-    "@1stg/common-config": "^3.1.0",
-    "rollup": "^2.69.2",
-    "rollup-plugin-ts": "^2.0.5",
-    "standard-version": "^9.3.2",
-    "ts-jest": "^27.1.3",
-    "type-coverage": "^2.21.0"
+    "@1stg/common-config": "^6.1.4",
+    "rollup": "^2.78.0",
+    "rollup-plugin-ts": "^3.0.2",
+    "standard-version": "^9.5.0",
+    "ts-jest": "^28.0.7",
+    "tsx": "^3.8.2",
+    "type-coverage": "^2.22.0",
+    "yarn-deduplicate": "^5.0.0"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.17.0",
-    "@typescript-eslint/experimental-utils": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "@typescript-eslint/scope-manager": "^5.17.0",
-    "@typescript-eslint/type-utils": "^5.17.0",
-    "@typescript-eslint/utils": "^5.17.0",
-    "prettier": "^2.6.1"
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.33.0",
+    "@typescript-eslint/experimental-utils": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "@typescript-eslint/scope-manager": "^5.33.0",
+    "@typescript-eslint/type-utils": "^5.33.0",
+    "@typescript-eslint/utils": "^5.33.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-sonar": "link:eslint-plugin-sonar",
+    "prettier": "^2.7.1"
   },
   "commitlint": {
     "extends": [
@@ -46,12 +50,14 @@
     ]
   },
   "eslintIgnore": [
+    "coverage",
     "lib",
     "node_modules",
     "/SonarJS",
     "/eslint-plugin-sonar/src/rules.ts",
-    "tests/fixtures",
+    "test/fixtures",
     "CHANGELOG.md",
+    "!/.github",
     "!/.*.js"
   ],
   "jest": {
@@ -61,7 +67,11 @@
     ],
     "moduleNameMapper": {
       "^eslint-plugin-sonar$": "<rootDir>/eslint-plugin-sonar/src",
-      "^sonarjs/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/$1"
+      "^helpers$": "<rootDir>/SonarJS/eslint-bridge/src/helpers",
+      "^linting/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/linting/$1",
+      "^parsing/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/parsing/$1",
+      "^services/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/services/$1",
+      "^sonarjs/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/linting/eslint/$1"
     }
   },
   "prettier": "@1stg/prettier-config",

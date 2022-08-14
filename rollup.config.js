@@ -62,7 +62,9 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
           chunk.code = removeUnusedDeps(
             chunk.code,
             format,
+            'process',
             'vue-eslint-parser',
+            '@typescript-eslint/eslint-plugin',
             '@typescript-eslint/parser',
           )
         }

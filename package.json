@@ -20,7 +20,6 @@
     "lint:tsc": "tsc --noEmit",
     "patch": "cd SonarJS && git apply ../patches/SonarJS.patch || exit 0",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
-    "prerelease": "yarn build",
     "release": "changeset publish",
     "test": "jest",
     "typecov": "type-coverage"

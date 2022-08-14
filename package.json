@@ -13,6 +13,7 @@
     "build": "run-s build:lib build:readme",
     "build:lib": "rimraf eslint-plugin-sonar/lib && rollup -c",
     "build:readme": "tsx scripts/readme",
+    "codesandbox:build": "yarn patch && yarn build",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",

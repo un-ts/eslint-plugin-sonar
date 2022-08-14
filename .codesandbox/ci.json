@@ -1,5 +1,6 @@
 {
   "node": "16",
+  "buildCommand": "codesandbox:build",
   "packages": [
     "eslint-plugin-sonar"
   ],

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.1
+
+### Patch Changes
+
+- [#60](https://github.com/un-ts/eslint-plugin-sonar/pull/60) [`b5b3df2`](https://github.com/un-ts/eslint-plugin-sonar/commit/b5b3df282615c1fbc49899f81b26ede0d95b7e5d) Thanks [@JounQin](https://github.com/JounQin)! - fix: add ending `.js` for ESM module compatibility
+
+- [#60](https://github.com/un-ts/eslint-plugin-sonar/pull/60) [`b5b3df2`](https://github.com/un-ts/eslint-plugin-sonar/commit/b5b3df282615c1fbc49899f81b26ede0d95b7e5d) Thanks [@JounQin](https://github.com/JounQin)! - fix: enable `type: module` in `package.json`
+
 ## 0.9.0
 
 ### Minor Changes

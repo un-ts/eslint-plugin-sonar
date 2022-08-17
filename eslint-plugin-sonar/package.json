@@ -1,6 +1,7 @@
 {
   "name": "eslint-plugin-sonar",
   "version": "0.9.0",
+  "type": "module",
   "repository": "git+https://github.com/un-ts/eslint-plugin-sonar.git",
   "homepage": "https://github.com/un-ts/eslint-plugin-sonar/tree/main/eslint-plugin-sonar",
   "author": "JounQin <admin@1stg.me>",

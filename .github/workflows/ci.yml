@@ -20,9 +20,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Patch
-        run: yarn patch
-
       - name: Setup Node.js ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:

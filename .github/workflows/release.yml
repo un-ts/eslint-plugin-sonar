@@ -17,9 +17,6 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - name: Patch
-        run: yarn patch
-
       - name: Setup Node.js 16
         uses: actions/setup-node@v3
         with:

@@ -11,14 +11,13 @@
   ],
   "scripts": {
     "build": "run-s build:lib build:readme",
-    "build:lib": "rimraf eslint-plugin-sonar/lib && rollup -c",
-    "build:readme": "tsx scripts/readme",
-    "codesandbox:build": "yarn patch && yarn build",
+    "build:lib": "rollup -c",
+    "build:readme": "ts-node scripts/readme",
+    "clean": "rimraf eslint-plugin-sonar/lib",
     "codesandbox:install": "git submodule update --init && yarn",
     "lint": "run-p lint:*",
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
-    "patch": "cd SonarJS && git apply ../patches/SonarJS.patch || exit 0",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
     "release": "changeset publish",
     "test": "jest",
@@ -32,7 +31,7 @@
     "rollup": "^2.78.0",
     "rollup-plugin-ts": "^3.0.2",
     "ts-jest": "^28.0.7",
-    "tsx": "^3.8.2",
+    "ts-node": "^10.9.1",
     "type-coverage": "^2.22.0",
     "yarn-deduplicate": "^5.0.0"
   },
@@ -46,6 +45,7 @@
     "@typescript-eslint/utils": "^5.33.0",
     "eslint": "^8.22.0",
     "eslint-plugin-sonar": "link:eslint-plugin-sonar",
+    "eslint-plugin-sonarjs": "^0.15.0",
     "prettier": "^2.7.1"
   },
   "jest": {

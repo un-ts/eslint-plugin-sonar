@@ -1,5 +1,5 @@
 {
-  "extends": "@1stg/tsconfig/lib",
+  "extends": "@1stg/tsconfig/node",
   "compilerOptions": {
     "paths": {
       "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
@@ -24,5 +24,8 @@
     "eslint-plugin-sonar/test/fixtures",
     "SonarJS/eslint-bridge/src/linting/stylelint",
     "node_modules"
-  ]
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  }
 }

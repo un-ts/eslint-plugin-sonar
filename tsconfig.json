@@ -4,10 +4,12 @@
     "paths": {
       "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
       "eslint-plugin-sonar/*": ["./eslint-plugin-sonar/src/*"],
+      "errors": ["./SonarJS/eslint-bridge/src/errors"],
       "helpers": ["./SonarJS/eslint-bridge/src/helpers"],
       "linting/*": ["./SonarJS/eslint-bridge/src/linting/*"],
       "parsing/*": ["./SonarJS/eslint-bridge/src/parsing/*"],
       "routing": ["./SonarJS/eslint-bridge/src/routing"],
+      "routing/*": ["./SonarJS/eslint-bridge/src/routing/*"],
       "services/*": ["./SonarJS/eslint-bridge/src/services/*"],
       "sonarjs/*": ["./SonarJS/eslint-bridge/src/linting/eslint/*"]
     },

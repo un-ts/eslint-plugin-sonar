@@ -239,6 +239,7 @@ npm install -D eslint-plugin-sonar
 | `sonar-jsx-no-leaked-render`              | <https://sonarsource.github.io/rspec/#/rspec/S6439/javascript>  |
 | `sonar-max-lines`                         | <https://sonarsource.github.io/rspec/#/rspec/S104/javascript>   |
 | `sonar-max-lines-per-function`            | <https://sonarsource.github.io/rspec/#/rspec/S138/javascript>   |
+| `sonar-max-params`                        | <https://sonarsource.github.io/rspec/#/rspec/S107/javascript>   |
 | `sonar-no-control-regex`                  | <https://sonarsource.github.io/rspec/#/rspec/S6324/javascript>  |
 | `sonar-no-dupe-keys`                      | <https://sonarsource.github.io/rspec/#/rspec/S1534/javascript>  |
 | `sonar-no-fallthrough`                    | <https://sonarsource.github.io/rspec/#/rspec/S128/javascript>   |

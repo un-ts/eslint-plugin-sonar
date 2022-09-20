@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.2
+
+### Patch Changes
+
+- [#64](https://github.com/un-ts/eslint-plugin-sonar/pull/64) [`cccb2b7`](https://github.com/un-ts/eslint-plugin-sonar/commit/cccb2b7a137b0982047739c71ac87e5a3d26a2b7) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing dep `functional-red-black-tree`
+
 ## 0.9.1
 
 ### Patch Changes

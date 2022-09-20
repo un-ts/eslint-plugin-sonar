@@ -19,6 +19,7 @@
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
     "prepare": "simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
+    "prerelease": "ts-node scripts/private",
     "release": "changeset publish",
     "test": "jest",
     "typecov": "type-coverage"

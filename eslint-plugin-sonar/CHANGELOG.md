@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.0
+
+### Minor Changes
+
+- [#70](https://github.com/un-ts/eslint-plugin-sonar/pull/70) [`5aa4d74`](https://github.com/un-ts/eslint-plugin-sonar/commit/5aa4d745b6aa8a45f2dce5c96035713f0fdedb8b) Thanks [@JounQin](https://github.com/JounQin)! - chore: bump eslint-plugin-sonarjs to `^0.16.0`
+
 ## 0.9.2
 
 ### Patch Changes

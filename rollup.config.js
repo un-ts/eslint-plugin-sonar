@@ -71,6 +71,7 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
           chunk.code = removeUnusedDeps(
             chunk.code,
             format,
+            'fs/promises',
             'errors',
             'process',
             'vue-eslint-parser',

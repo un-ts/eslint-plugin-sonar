@@ -33,7 +33,7 @@
     "rollup-plugin-ts": "^3.0.2",
     "ts-node": "^10.9.1",
     "type-coverage": "^2.22.0",
-    "yarn-deduplicate": "^6.0.0"
+    "yarn-deduplicate": "^6.0.1"
   },
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "^5.42.0",

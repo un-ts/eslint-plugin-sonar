@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@1stg/common-config": "^7.2.0",
-    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.25.2",
     "@rollup/plugin-alias": "^4.0.2",
     "rollup": "^2.78.0",

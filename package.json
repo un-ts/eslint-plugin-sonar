@@ -43,7 +43,7 @@
     "@typescript-eslint/scope-manager": "^5.42.0",
     "@typescript-eslint/type-utils": "^5.42.0",
     "@typescript-eslint/utils": "^5.42.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.36.0",
     "eslint-plugin-sonar": "link:eslint-plugin-sonar",
     "eslint-plugin-sonarjs": "^0.16.0",
     "prettier": "^2.7.1"

@@ -3,7 +3,6 @@
 [ESLint](https://github.com/eslint/eslint) rules extracted from [SonarJS](https://github.com/SonarSource/SonarJS)
 
 [![GitHub Actions](https://github.com/un-ts/eslint-plugin-sonar/workflows/CI/badge.svg)](https://github.com/un-ts/eslint-plugin-sonar/actions/workflows/ci.yml)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/un-ts/eslint-plugin-sonar.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/un-ts/eslint-plugin-sonar/context:javascript)
 [![type-coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Frx-ts%2Feslint-plugin-sonar%2Fmaster%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-sonar.svg)](https://www.npmjs.com/package/eslint-plugin-sonar)
 [![GitHub release](https://img.shields.io/github/release/un-ts/eslint-plugin-sonar)](https://github.com/un-ts/eslint-plugin-sonar/releases)
@@ -182,6 +181,7 @@ npm install -D eslint-plugin-sonar
 | `no-hardcoded-credentials`                | <https://sonarsource.github.io/rspec/#/rspec/S2068/javascript>  |
 | `no-hardcoded-ip`                         | <https://sonarsource.github.io/rspec/#/rspec/S1313/javascript>  |
 | `no-hook-setter-in-body`                  | <https://sonarsource.github.io/rspec/#/rspec/S6442/javascript>  |
+| `no-ignored-exceptions`                   | <https://sonarsource.github.io/rspec/#/rspec/S2486/javascript>  |
 | `no-implicit-dependencies`                | <https://sonarsource.github.io/rspec/#/rspec/S4328/javascript>  |
 | `no-implicit-global`                      | <https://sonarsource.github.io/rspec/#/rspec/S2703/javascript>  |
 | `no-in-misuse`                            | <https://sonarsource.github.io/rspec/#/rspec/S4619/javascript>  |
@@ -217,6 +217,7 @@ npm install -D eslint-plugin-sonar
 | `no-undefined-argument`                   | <https://sonarsource.github.io/rspec/#/rspec/S4623/javascript>  |
 | `no-undefined-assignment`                 | <https://sonarsource.github.io/rspec/#/rspec/S2138/javascript>  |
 | `no-unenclosed-multiline-block`           | <https://sonarsource.github.io/rspec/#/rspec/S2681/javascript>  |
+| `no-uniq-key`                             | <https://sonarsource.github.io/rspec/#/rspec/S6486/javascript>  |
 | `no-unsafe-unzip`                         | <https://sonarsource.github.io/rspec/#/rspec/S5042/javascript>  |
 | `no-unthrown-error`                       | <https://sonarsource.github.io/rspec/#/rspec/S3984/javascript>  |
 | `no-unused-function-argument`             | <https://sonarsource.github.io/rspec/#/rspec/S1172/javascript>  |
@@ -256,6 +257,7 @@ npm install -D eslint-plugin-sonar
 | `sonar-max-params`                        | <https://sonarsource.github.io/rspec/#/rspec/S107/javascript>   |
 | `sonar-no-control-regex`                  | <https://sonarsource.github.io/rspec/#/rspec/S6324/javascript>  |
 | `sonar-no-dupe-keys`                      | <https://sonarsource.github.io/rspec/#/rspec/S1534/javascript>  |
+| `sonar-no-empty-character-class`          | <https://sonarsource.github.io/rspec/#/rspec/S2639/javascript>  |
 | `sonar-no-fallthrough`                    | <https://sonarsource.github.io/rspec/#/rspec/S128/javascript>   |
 | `sonar-no-invalid-regexp`                 | <https://sonarsource.github.io/rspec/#/rspec/S5856/javascript>  |
 | `sonar-no-misleading-character-class`     | <https://sonarsource.github.io/rspec/#/rspec/S5868/javascript>  |
@@ -273,6 +275,7 @@ npm install -D eslint-plugin-sonar
 | `todo-tag`                                | <https://sonarsource.github.io/rspec/#/rspec/S1135/javascript>  |
 | `too-many-break-or-continue-in-loop`      | <https://sonarsource.github.io/rspec/#/rspec/S135/javascript>   |
 | `unicode-aware-regex`                     | <https://sonarsource.github.io/rspec/#/rspec/S5867/javascript>  |
+| `unnecessary-character-escapes`           | <https://sonarsource.github.io/rspec/#/rspec/S6535/javascript>  |
 | `unused-import`                           | <https://sonarsource.github.io/rspec/#/rspec/S1128/javascript>  |
 | `unused-named-groups`                     | <https://sonarsource.github.io/rspec/#/rspec/S5860/javascript>  |
 | `unverified-certificate`                  | <https://sonarsource.github.io/rspec/#/rspec/S4830/javascript>  |

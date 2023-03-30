@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-const pkgPath = 'SonarJS/eslint-bridge/package.json'
+const pkgPath = 'SonarJS/package.json'
 
 const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8')) as {
   private?: boolean

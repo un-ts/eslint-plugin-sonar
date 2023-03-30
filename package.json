@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "SonarJS/eslint-bridge",
+    "SonarJS",
     "eslint-plugin-sonar"
   ],
   "scripts": {
@@ -26,27 +26,26 @@
   },
   "devDependencies": {
     "@1stg/common-config": "^7.2.0",
-    "@changesets/changelog-github": "^0.4.7",
-    "@changesets/cli": "^2.25.2",
-    "@rollup/plugin-alias": "^4.0.2",
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
+    "@rollup/plugin-alias": "^4.0.3",
     "rollup": "^2.78.0",
-    "rollup-plugin-ts": "^3.0.2",
+    "rollup-plugin-ts": "^3.2.0",
     "ts-node": "^10.9.1",
-    "type-coverage": "^2.22.0",
-    "yarn-deduplicate": "^6.0.0"
+    "type-coverage": "^2.25.0",
+    "yarn-deduplicate": "^6.0.1"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.42.0",
-    "@typescript-eslint/experimental-utils": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "@typescript-eslint/scope-manager": "^5.42.0",
-    "@typescript-eslint/type-utils": "^5.42.0",
-    "@typescript-eslint/utils": "^5.42.0",
-    "eslint": "^8.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/experimental-utils": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/scope-manager": "^5.57.0",
+    "@typescript-eslint/type-utils": "^5.57.0",
+    "@typescript-eslint/utils": "^5.57.0",
+    "eslint": "^8.37.0",
     "eslint-plugin-sonar": "link:eslint-plugin-sonar",
-    "eslint-plugin-sonarjs": "^0.16.0",
-    "prettier": "^2.7.1"
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "prettier": "^2.8.7"
   },
   "jest": {
     "preset": "ts-jest",
@@ -55,11 +54,14 @@
     ],
     "moduleNameMapper": {
       "^eslint-plugin-sonar$": "<rootDir>/eslint-plugin-sonar/src",
-      "^helpers$": "<rootDir>/SonarJS/eslint-bridge/src/helpers",
-      "^linting/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/linting/$1",
-      "^parsing/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/parsing/$1",
-      "^services/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/services/$1",
-      "^sonarjs/(.*)$": "<rootDir>/SonarJS/eslint-bridge/src/linting/eslint/$1"
+      "^errors$": "<rootDir>/SonarJS/src/errors",
+      "^helpers$": "<rootDir>/SonarJS/src/helpers",
+      "^linting/(.*)$": "<rootDir>/SonarJS/src/linting/$1",
+      "^parsing/(.*)$": "<rootDir>/SonarJS/src/parsing/$1",
+      "^routing$": "<rootDir>/SonarJS/src/routing",
+      "^routing/(.*)$": "<rootDir>/SonarJS/src/routing/$1",
+      "^services/(.*)$": "<rootDir>/SonarJS/src/services/$1",
+      "^sonarjs/(.*)$": "<rootDir>/SonarJS/src/linting/eslint/$1"
     }
   },
   "typeCoverage": {

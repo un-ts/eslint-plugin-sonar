@@ -4,7 +4,7 @@ import alias from '@rollup/plugin-alias'
 import builtinModules from 'builtin-modules'
 import ts from 'rollup-plugin-ts'
 
-import pkg from './SonarJS/eslint-bridge/package.json'
+import pkg from './SonarJS/package.json'
 
 const EXTERNALS = [...builtinModules, ...Object.keys(pkg.dependencies)]
 
@@ -74,8 +74,8 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
             'fs/promises',
             'errors',
             'process',
+            'util',
             'vue-eslint-parser',
-            '@typescript-eslint/eslint-plugin',
             '@typescript-eslint/parser',
           ).replace(/(["'])(eslint-plugin-sonarjs\/[^"']+)\1/g, '$1$2.js$1')
         }

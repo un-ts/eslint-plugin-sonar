@@ -3,15 +3,14 @@
   "compilerOptions": {
     "paths": {
       "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
-      "eslint-plugin-sonar/*": ["./eslint-plugin-sonar/src/*"],
-      "errors": ["./SonarJS/eslint-bridge/src/errors"],
-      "helpers": ["./SonarJS/eslint-bridge/src/helpers"],
-      "linting/*": ["./SonarJS/eslint-bridge/src/linting/*"],
-      "parsing/*": ["./SonarJS/eslint-bridge/src/parsing/*"],
-      "routing": ["./SonarJS/eslint-bridge/src/routing"],
-      "routing/*": ["./SonarJS/eslint-bridge/src/routing/*"],
-      "services/*": ["./SonarJS/eslint-bridge/src/services/*"],
-      "sonarjs/*": ["./SonarJS/eslint-bridge/src/linting/eslint/*"]
+      "errors": ["./SonarJS/src/errors"],
+      "helpers": ["./SonarJS/src/helpers"],
+      "linting/*": ["./SonarJS/src/linting/*"],
+      "parsing/*": ["./SonarJS/src/parsing/*"],
+      "routing": ["./SonarJS/src/routing"],
+      "routing/*": ["./SonarJS/src/routing/*"],
+      "services/*": ["./SonarJS/src/services/*"],
+      "sonarjs/*": ["./SonarJS/src/linting/eslint/*"]
     },
     "target": "ES2018",
     "useUnknownInCatchVariables": false
@@ -19,12 +18,12 @@
   "include": [
     "eslint-plugin-sonar",
     "scripts",
-    "SonarJS/eslint-bridge/src",
-    "SonarJS/eslint-bridge/typings"
+    "SonarJS/src",
+    "SonarJS/typings"
   ],
   "exclude": [
     "eslint-plugin-sonar/test/fixtures",
-    "SonarJS/eslint-bridge/src/linting/stylelint",
+    "SonarJS/src/linting/stylelint",
     "node_modules"
   ],
   "ts-node": {

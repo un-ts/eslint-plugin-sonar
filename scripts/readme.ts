@@ -9,10 +9,7 @@ const wrapLink = (link?: string) => (link ? `<${link}>` : 'N/A')
 const getRuleDetailLink = (rule: string) => {
   const matched =
     /https:\/\/sonarsource\.github\.io\/rspec\/#\/rspec\/S\d+\/javascript/.exec(
-      fs.readFileSync(
-        `SonarJS/eslint-bridge/src/linting/eslint/rules/${rule}.ts`,
-        'utf8',
-      ),
+      fs.readFileSync(`SonarJS/src/linting/eslint/rules/${rule}.ts`, 'utf8'),
     )
   return matched?.[0]
 }

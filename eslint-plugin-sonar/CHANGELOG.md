@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.11.0
+
+### Minor Changes
+
+- [`a714658`](https://github.com/un-ts/eslint-plugin-sonar/commit/a71465853d236910aad49cca67046b2c3a67d6a5) Thanks [@JounQin](https://github.com/JounQin)! - feat: sync with upstream
+
 ## 0.10.0
 
 ### Minor Changes

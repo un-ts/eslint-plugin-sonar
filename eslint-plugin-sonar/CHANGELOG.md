@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.11.1
+
+### Patch Changes
+
+- [`4ba78b9`](https://github.com/un-ts/eslint-plugin-sonar/commit/4ba78b97d56b9b26702b3f10c02dc7919e94adc8) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing tmp dep
+
 ## 0.11.0
 
 ### Minor Changes

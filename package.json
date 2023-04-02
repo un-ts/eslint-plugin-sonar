@@ -9,6 +9,7 @@
     "SonarJS",
     "eslint-plugin-sonar"
   ],
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "build": "run-s build:lib build:readme",
     "build:lib": "rollup -c",

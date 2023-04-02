@@ -44,7 +44,8 @@
     "eslint-plugin-sonarjs": "^0.19.0",
     "functional-red-black-tree": "^1.0.1",
     "regexpp": "^3.2.0",
-    "scslre": "^0.1.6"
+    "scslre": "^0.1.6",
+    "tmp": "^0.2.1"
   },
   "publishConfig": {
     "access": "public"

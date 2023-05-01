@@ -29,7 +29,7 @@
     "@1stg/common-config": "^7.2.0",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.1",
-    "@rollup/plugin-alias": "^4.0.3",
+    "@rollup/plugin-alias": "^4.0.4",
     "rollup": "^2.78.0",
     "rollup-plugin-ts": "^3.2.0",
     "ts-node": "^10.9.1",

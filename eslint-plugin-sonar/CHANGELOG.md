@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.12.0
+
+### Minor Changes
+
+- [#93](https://github.com/un-ts/eslint-plugin-sonar/pull/93) [`776daee`](https://github.com/un-ts/eslint-plugin-sonar/commit/776daeee8c408740d9bffd3f2edb0bcd60807797) Thanks [@JounQin](https://github.com/JounQin)! - feat!: support typescript v5
+
 ## 0.11.1
 
 ### Patch Changes

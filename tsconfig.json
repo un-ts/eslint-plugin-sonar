@@ -5,6 +5,7 @@
       "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
       "errors": ["./SonarJS/src/errors"],
       "helpers": ["./SonarJS/src/helpers"],
+      "helpers/*": ["./SonarJS/src/helpers/*"],
       "linting/*": ["./SonarJS/src/linting/*"],
       "parsing/*": ["./SonarJS/src/parsing/*"],
       "routing": ["./SonarJS/src/routing"],

@@ -196,6 +196,7 @@ npm install -D eslint-plugin-sonar
 | `no-labels`                               | <https://sonarsource.github.io/rspec/#/rspec/S1119/javascript>  |
 | `no-mime-sniff`                           | <https://sonarsource.github.io/rspec/#/rspec/S5734/javascript>  |
 | `no-misleading-array-reverse`             | <https://sonarsource.github.io/rspec/#/rspec/S4043/javascript>  |
+| `no-misused-promises`                     | <https://sonarsource.github.io/rspec/#/rspec/S6544/javascript>  |
 | `no-mixed-content`                        | <https://sonarsource.github.io/rspec/#/rspec/S5730/javascript>  |
 | `no-nested-assignment`                    | <https://sonarsource.github.io/rspec/#/rspec/S1121/javascript>  |
 | `no-nested-conditional`                   | <https://sonarsource.github.io/rspec/#/rspec/S3358/javascript>  |
@@ -241,6 +242,7 @@ npm install -D eslint-plugin-sonar
 | `production-debug`                        | <https://sonarsource.github.io/rspec/#/rspec/S4507/javascript>  |
 | `pseudo-random`                           | <https://sonarsource.github.io/rspec/#/rspec/S2245/javascript>  |
 | `publicly-writable-directories`           | <https://sonarsource.github.io/rspec/#/rspec/S5443/javascript>  |
+| `redundant-type-aliases`                  | <https://sonarsource.github.io/rspec/#/rspec/S6564/javascript>  |
 | `regex-complexity`                        | <https://sonarsource.github.io/rspec/#/rspec/S5843/javascript>  |
 | `regular-expr`                            | <https://sonarsource.github.io/rspec/#/rspec/S4784/javascript>  |
 | `rules-of-hooks`                          | <https://sonarsource.github.io/rspec/#/rspec/S6441/javascript>  |
@@ -264,6 +266,8 @@ npm install -D eslint-plugin-sonar
 | `sonar-no-regex-spaces`                   | <https://sonarsource.github.io/rspec/#/rspec/S6326/javascript>  |
 | `sonar-no-unused-class-component-methods` | <https://sonarsource.github.io/rspec/#/rspec/S6441/javascript>  |
 | `sonar-no-unused-vars`                    | <https://sonarsource.github.io/rspec/#/rspec/S1481/javascript>  |
+| `sonar-prefer-optional-chain`             | <https://sonarsource.github.io/rspec/#/rspec/S6582/javascript>  |
+| `sonar-prefer-regexp-exec`                | <https://sonarsource.github.io/rspec/#/rspec/S6594/javascript>  |
 | `sql-queries`                             | <https://sonarsource.github.io/rspec/#/rspec/S2077/javascript>  |
 | `standard-input`                          | <https://sonarsource.github.io/rspec/#/rspec/S4829/javascript>  |
 | `stateful-regex`                          | <https://sonarsource.github.io/rspec/#/rspec/S6351/javascript>  |

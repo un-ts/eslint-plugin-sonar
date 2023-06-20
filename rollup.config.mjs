@@ -4,7 +4,7 @@ import alias from '@rollup/plugin-alias'
 import builtinModules from 'builtin-modules'
 import ts from 'rollup-plugin-ts'
 
-import pkg from './SonarJS/package.json'
+import pkg from './SonarJS/package.json' assert { type: 'json' }
 
 const EXTERNALS = [...builtinModules, ...Object.keys(pkg.dependencies)]
 

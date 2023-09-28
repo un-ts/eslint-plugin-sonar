@@ -30,7 +30,7 @@
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.1",
     "@rollup/plugin-alias": "^5.0.0",
-    "rollup": "^3.25.1",
+    "rollup": "^3.29.4",
     "rollup-plugin-ts": "^3.2.0",
     "ts-node": "^10.9.1",
     "type-coverage": "^2.26.0",

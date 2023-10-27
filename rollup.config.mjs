@@ -13,7 +13,9 @@ const EXTERNALS = [...builtinModules, ...Object.keys(pkg.dependencies)]
  * @returns {boolean} should source file be externalized
  */
 const external = source =>
-  EXTERNALS.some(external => new RegExp(`^${external}(\\/?|$)`).test(source))
+  EXTERNALS.some(
+    external => source === external || source.startsWith(`${external}/`),
+  )
 
 /**
  * @param {string} content file content
@@ -77,7 +79,14 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
             'util',
             'vue-eslint-parser',
             '@typescript-eslint/parser',
-          ).replace(/(["'])(eslint-plugin-sonarjs\/[^"']+)\1/g, '$1$2.js$1')
+          )
+            .replace(/(["'])(eslint-plugin-sonarjs\/[^"']+)\1/g, '$1$2.js$1')
+            // fix #101
+            .replaceAll(/\bts__default\b/g, 'ts')
+            .replace(
+              "import ts, { SyntaxKind, TypeFlags } from 'typescript'",
+              'const { SyntaxKind, TypeFlags } = ts',
+            )
         }
       },
     },

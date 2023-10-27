@@ -5095,6 +5095,10 @@ eslint-plugin-simple-import-sort@^10.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-10.0.0.tgz#cc4ceaa81ba73252427062705b64321946f61351"
   integrity sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==
 
+eslint-plugin-sonar@^0.11.1:
+  version "0.0.0"
+  uid ""
+
 "eslint-plugin-sonar@link:eslint-plugin-sonar":
   version "0.0.0"
   uid ""

@@ -33,7 +33,7 @@
     "rollup": "^3.25.1",
     "rollup-plugin-ts": "^3.2.0",
     "ts-node": "^10.9.1",
-    "type-coverage": "^2.26.0",
+    "type-coverage": "^2.27.1",
     "yarn-deduplicate": "^6.0.2"
   },
   "resolutions": {

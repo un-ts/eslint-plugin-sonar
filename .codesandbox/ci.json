@@ -1,5 +1,5 @@
 {
-  "node": "16",
+  "node": "18",
   "installCommand": "codesandbox:install",
   "packages": [
     "eslint-plugin-sonar"

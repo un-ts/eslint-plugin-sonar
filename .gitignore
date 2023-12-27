@@ -2,3 +2,4 @@
 .type-coverage
 node_modules
 /eslint-plugin-sonar/lib
+/test.*

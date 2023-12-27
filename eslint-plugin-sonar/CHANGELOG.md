@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.13.0
+
+### Minor Changes
+
+- [#113](https://github.com/un-ts/eslint-plugin-sonar/pull/113) [`9dc4bfe`](https://github.com/un-ts/eslint-plugin-sonar/commit/9dc4bfed17097d3e33cb79c9e6444f69390b5e39) Thanks [@JounQin](https://github.com/JounQin)! - feat!: bump SonarJS and related dependencies
+
+### Patch Changes
+
+- [#102](https://github.com/un-ts/eslint-plugin-sonar/pull/102) [`23a43b3`](https://github.com/un-ts/eslint-plugin-sonar/commit/23a43b32f846960bb1910f6f4371a3466a726bc1) Thanks [@matwilko](https://github.com/matwilko)! - chore: add missing transitive peer dependencies
+
 ## 0.12.0
 
 ### Minor Changes

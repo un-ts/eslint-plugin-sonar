@@ -2,4 +2,4 @@
 'eslint-plugin-sonar': patch
 ---
 
-Adding missing transitive peer dependencies
+chore: add missing transitive peer dependencies

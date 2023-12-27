@@ -6,12 +6,19 @@ import { rules } from 'eslint-plugin-sonar'
 
 const wrapLink = (link?: string) => (link ? `<${link}>` : 'N/A')
 
+const rulesFileContent = fs.readFileSync(
+  'SonarJS/packages/jsts/src/rules/index.ts',
+  'utf8',
+)
+
 const getRuleDetailLink = (rule: string) => {
-  const matched =
-    /https:\/\/sonarsource\.github\.io\/rspec\/#\/rspec\/S\d+\/javascript/.exec(
-      fs.readFileSync(`SonarJS/src/linting/eslint/rules/${rule}.ts`, 'utf8'),
-    )
-  return matched?.[0]
+  const matched = new RegExp(`rules\\['${rule}'\\] = (S\\d+)`).exec(
+    rulesFileContent,
+  )
+  if (!matched) {
+    return
+  }
+  return `https://sonarsource.github.io/rspec/#/rspec/${matched[1]}/javascript`
 }
 
 const ruleNames = Object.keys(rules)

@@ -2,6 +2,7 @@ coverage
 lib
 node_modules
 /SonarJS
+/test.*
 test/fixtures
 CHANGELOG.md
 !/.github

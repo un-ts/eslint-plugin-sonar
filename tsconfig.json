@@ -1,17 +1,13 @@
 {
-  "extends": "@1stg/tsconfig/node",
+  "extends": "@1stg/tsconfig/nodenext",
   "compilerOptions": {
     "paths": {
-      "eslint-plugin-sonar": ["./eslint-plugin-sonar/src"],
-      "errors": ["./SonarJS/src/errors"],
-      "helpers": ["./SonarJS/src/helpers"],
-      "helpers/*": ["./SonarJS/src/helpers/*"],
-      "linting/*": ["./SonarJS/src/linting/*"],
-      "parsing/*": ["./SonarJS/src/parsing/*"],
-      "routing": ["./SonarJS/src/routing"],
-      "routing/*": ["./SonarJS/src/routing/*"],
-      "services/*": ["./SonarJS/src/services/*"],
-      "sonarjs/*": ["./SonarJS/src/linting/eslint/*"]
+      "@sonar/jsts": ["./SonarJS/packages/jsts/src/index.ts"],
+      "@sonar/shared": ["./SonarJS/packages/shared/src/index.ts"],
+      "jsts/src/monitoring": [
+        "./SonarJS/packages/jsts/src/monitoring/index.ts"
+      ],
+      "sonarjs/*": ["./SonarJS/packages/jsts/src/*"]
     },
     "target": "ES2018",
     "useUnknownInCatchVariables": false
@@ -19,15 +15,17 @@
   "include": [
     "eslint-plugin-sonar",
     "scripts",
-    "SonarJS/src",
+    "SonarJS/packages/jsts/src/rules",
+    "SonarJS/packages/shared/src",
     "SonarJS/typings"
   ],
   "exclude": [
     "eslint-plugin-sonar/test/fixtures",
-    "SonarJS/src/linting/stylelint",
+    "SonarJS/packages/**/*.fixture.*",
+    "SonarJS/packages/**/*.test.*",
+    "SonarJS/packages/**/fixtures",
+    "SonarJS/packages/**/tests",
+    "SonarJS/packages/jsts/src/rules/tools",
     "node_modules"
-  ],
-  "ts-node": {
-    "transpileOnly": true
-  }
+  ]
 }

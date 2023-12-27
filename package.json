@@ -21,7 +21,7 @@
     "lint:es": "eslint . --cache --max-warnings 10 -f friendly",
     "lint:tsc": "tsc --noEmit",
     "prepare": "patch-package && simple-git-hooks && yarn-deduplicate --strategy fewer || exit 0",
-    "release": "yarn build && tsx scripts/private &&& changeset publish",
+    "release": "tsx scripts/private &&& changeset publish",
     "typecov": "type-coverage"
   },
   "devDependencies": {

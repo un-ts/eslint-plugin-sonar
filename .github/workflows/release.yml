@@ -26,6 +26,10 @@ jobs:
       - name: Install Dependencies
         run: yarn --frozen-lockfile
 
+      # required for committing before releasing
+      - name: Build
+        run: yarn build
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1

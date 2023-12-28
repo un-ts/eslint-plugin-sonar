@@ -30,6 +30,7 @@
     "@changesets/cli": "^2.27.1",
     "@rollup/plugin-alias": "^5.1.0",
     "@types/prettier": "^2.7.3",
+    "minimatch": "^9.0.3",
     "patch-package": "^8.0.0",
     "rollup": "^4.9.1",
     "rollup-plugin-ts": "^3.4.5",

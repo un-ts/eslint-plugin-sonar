@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.1
+
+### Patch Changes
+
+- [#115](https://github.com/un-ts/eslint-plugin-sonar/pull/115) [`eb6899f`](https://github.com/un-ts/eslint-plugin-sonar/commit/eb6899feb3cf90b390e91a86d747d701099f7072) Thanks [@JounQin](https://github.com/JounQin)! - fix: minimatch used in SonarJS is dual
+
 ## 0.13.0
 
 ### Minor Changes

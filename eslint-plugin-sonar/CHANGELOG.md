@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.13.2
+
+### Patch Changes
+
+- [#122](https://github.com/un-ts/eslint-plugin-sonar/pull/122) [`86b291c`](https://github.com/un-ts/eslint-plugin-sonar/commit/86b291c9e0c9adc28f93844addeb7a9e36666859) Thanks [@JounQin](https://github.com/JounQin)! - fix: eslint peer version should be v8 now
+
 ## 0.13.1
 
 ### Patch Changes

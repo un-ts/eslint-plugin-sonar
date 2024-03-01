@@ -50,7 +50,7 @@
     "jsx-ast-utils": "^3.3.5",
     "minimatch": "^9.0.3",
     "scslre": "^0.3.0",
-    "tmp": "^0.2.1"
+    "tmp": "^0.2.3"
   },
   "publishConfig": {
     "access": "public"

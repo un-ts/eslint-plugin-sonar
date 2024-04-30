@@ -32,7 +32,7 @@
     "@types/prettier": "^2.7.3",
     "minimatch": "^9.0.3",
     "patch-package": "^8.0.0",
-    "rollup": "^4.9.1",
+    "rollup": "^4.17.2",
     "rollup-plugin-ts": "^3.4.5",
     "tsx": "^4.7.0",
     "type-coverage": "^2.27.1",

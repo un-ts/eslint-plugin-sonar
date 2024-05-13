@@ -79,7 +79,10 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
             'util',
             'vue-eslint-parser',
             '@typescript-eslint/parser',
-          ).replaceAll(/(["'])(eslint-plugin-sonarjs\/[^"']+)\1/g, '$1$2.js$1')
+          ).replaceAll(
+            /(["'])(eslint-plugin-(?:jsx-a11y|sonarjs)\/[^"']+)\1/g,
+            '$1$2.js$1',
+          )
         }
       },
     },

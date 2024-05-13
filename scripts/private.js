@@ -1,10 +1,13 @@
+// @ts-check
+
 import fs from 'node:fs'
 
 const pkgPath = 'SonarJS/package.json'
 
-const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8')) as {
-  private?: boolean
-}
+/**
+ * @type {{ private?: boolean }}
+ */
+const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'))
 
 pkg.private = true
 

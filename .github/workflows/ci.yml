@@ -32,7 +32,7 @@ jobs:
       - name: Build, Lint and Test
         run: |
           yarn build
-          yarn run-p lint typecov
+          yarn run-p lint test typecov
         env:
           EFF_NO_LINK_RULES: true
           PARSER_NO_WATCH: true

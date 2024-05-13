@@ -1,17 +1,24 @@
+// @ts-check
+
 import fs from 'node:fs'
 
+import { rules } from 'eslint-plugin-sonar'
 import prettier from 'prettier'
 
-import { rules } from 'eslint-plugin-sonar'
-
-const wrapLink = (link?: string) => (link ? `<${link}>` : 'N/A')
+/**
+ * @param {string} [link]
+ */
+const wrapLink = link => (link ? `<${link}>` : 'N/A')
 
 const rulesFileContent = fs.readFileSync(
   'SonarJS/packages/jsts/src/rules/index.ts',
   'utf8',
 )
 
-const getRuleDetailLink = (rule: string) => {
+/**
+ * @param {string} rule
+ */
+const getRuleDetailLink = rule => {
   const matched = new RegExp(`rules\\['${rule}'\\] = (S\\d+)`).exec(
     rulesFileContent,
   )
@@ -38,7 +45,7 @@ const prefix = srcContent.slice(
 
 const suffix = srcContent.slice(srcContent.lastIndexOf(suffixPlaceholder))
 
-const destContent = prettier.format(
+const destContent = await prettier.format(
   `${prefix}
 | rule name | detail link |
 | --------- | ----------- |
@@ -47,7 +54,7 @@ ${ruleNames
   .join('\n')}
 ${suffix}`,
   {
-    ...prettier.resolveConfig.sync(srcPath),
+    ...(await prettier.resolveConfig(srcPath)),
     parser: 'markdown',
   },
 )

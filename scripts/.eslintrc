@@ -1,5 +1,6 @@
 {
   "rules": {
+    "jsdoc/require-returns": 0,
     "node/no-extraneous-import": 0
   }
 }

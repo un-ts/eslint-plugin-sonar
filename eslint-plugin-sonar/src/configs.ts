@@ -100,7 +100,12 @@ export const recommended: Linter.Config = {
     'sonar/destructuring-assignment-syntax': 2,
     'sonar/function-name': [2, { format: '^_?[a-zA-Z][a-zA-Z0-9]*\\$?$' }],
     'sonar/future-reserved-words': 2,
-    'sonar/max-union-size': [1, 5],
+    'sonar/max-union-size': [
+      1,
+      {
+        threshold: 5,
+      },
+    ],
     'sonar/misplaced-loop-counter': 2,
     'sonar/no-equals-in-for-termination': 2,
     'sonar/no-for-in-iterable': 2,

@@ -44,8 +44,8 @@ npm install -D eslint-plugin-sonar
 {
   "plugins": ["sonar"],
   "rules": {
-    "sonar/deprecation": 1
-  }
+    "sonar/deprecation": 1,
+  },
 }
 ```
 
@@ -56,8 +56,8 @@ npm install -D eslint-plugin-sonar
   "extends": [
     // only one of the following is needed to be enabled
     "plugin:sonar/base",
-    "plugin:sonar/recommended"
-  ]
+    "plugin:sonar/recommended",
+  ],
 }
 ```
 
@@ -151,7 +151,8 @@ npm install -D eslint-plugin-sonar
 | `generator-without-yield`                 | <https://sonarsource.github.io/rspec/#/rspec/S3531/javascript> |
 | `hashing`                                 | <https://sonarsource.github.io/rspec/#/rspec/S4790/javascript> |
 | `hidden-files`                            | <https://sonarsource.github.io/rspec/#/rspec/S5691/javascript> |
-| `html-has-lang`                           | <https://sonarsource.github.io/rspec/#/rspec/S6849/javascript> |
+| `hook-use-state`                          | <https://sonarsource.github.io/rspec/#/rspec/S6754/javascript> |
+| `html-has-lang`                           | <https://sonarsource.github.io/rspec/#/rspec/S5254/javascript> |
 | `in-operator-type-error`                  | <https://sonarsource.github.io/rspec/#/rspec/S3785/javascript> |
 | `inconsistent-function-call`              | <https://sonarsource.github.io/rspec/#/rspec/S3686/javascript> |
 | `index-of-compare-to-positive-number`     | <https://sonarsource.github.io/rspec/#/rspec/S2692/javascript> |
@@ -165,7 +166,7 @@ npm install -D eslint-plugin-sonar
 | `label-position`                          | <https://sonarsource.github.io/rspec/#/rspec/S1439/javascript> |
 | `link-with-target-blank`                  | <https://sonarsource.github.io/rspec/#/rspec/S5148/javascript> |
 | `max-union-size`                          | <https://sonarsource.github.io/rspec/#/rspec/S4622/javascript> |
-| `media-has-caption`                       | <https://sonarsource.github.io/rspec/#/rspec/S6855/javascript> |
+| `media-has-caption`                       | <https://sonarsource.github.io/rspec/#/rspec/S4084/javascript> |
 | `misplaced-loop-counter`                  | <https://sonarsource.github.io/rspec/#/rspec/S1994/javascript> |
 | `mouse-events-a11y`                       | <https://sonarsource.github.io/rspec/#/rspec/S1082/javascript> |
 | `nested-control-flow`                     | <https://sonarsource.github.io/rspec/#/rspec/S134/javascript>  |
@@ -175,6 +176,7 @@ npm install -D eslint-plugin-sonar
 | `no-alphabetical-sort`                    | <https://sonarsource.github.io/rspec/#/rspec/S2871/javascript> |
 | `no-angular-bypass-sanitization`          | <https://sonarsource.github.io/rspec/#/rspec/S6268/javascript> |
 | `no-array-delete`                         | <https://sonarsource.github.io/rspec/#/rspec/S2870/javascript> |
+| `no-array-index-key`                      | <https://sonarsource.github.io/rspec/#/rspec/S6479/javascript> |
 | `no-associative-arrays`                   | <https://sonarsource.github.io/rspec/#/rspec/S3579/javascript> |
 | `no-base-to-string`                       | <https://sonarsource.github.io/rspec/#/rspec/S6551/javascript> |
 | `no-built-in-override`                    | <https://sonarsource.github.io/rspec/#/rspec/S2424/javascript> |
@@ -184,6 +186,7 @@ npm install -D eslint-plugin-sonar
 | `no-commented-code`                       | <https://sonarsource.github.io/rspec/#/rspec/S125/javascript>  |
 | `no-dead-store`                           | <https://sonarsource.github.io/rspec/#/rspec/S1854/javascript> |
 | `no-delete-var`                           | <https://sonarsource.github.io/rspec/#/rspec/S3001/javascript> |
+| `no-deprecated-react`                     | <https://sonarsource.github.io/rspec/#/rspec/S6957/javascript> |
 | `no-duplicate-in-composite`               | <https://sonarsource.github.io/rspec/#/rspec/S4621/javascript> |
 | `no-empty`                                | <https://sonarsource.github.io/rspec/#/rspec/S108/javascript>  |
 | `no-empty-after-reluctant`                | <https://sonarsource.github.io/rspec/#/rspec/S6019/javascript> |
@@ -217,6 +220,7 @@ npm install -D eslint-plugin-sonar
 | `no-invariant-returns`                    | <https://sonarsource.github.io/rspec/#/rspec/S3516/javascript> |
 | `no-ip-forward`                           | <https://sonarsource.github.io/rspec/#/rspec/S5759/javascript> |
 | `no-labels`                               | <https://sonarsource.github.io/rspec/#/rspec/S1119/javascript> |
+| `no-literal-call`                         | <https://sonarsource.github.io/rspec/#/rspec/S6958/javascript> |
 | `no-lonely-if`                            | <https://sonarsource.github.io/rspec/#/rspec/S6660/javascript> |
 | `no-mime-sniff`                           | <https://sonarsource.github.io/rspec/#/rspec/S5734/javascript> |
 | `no-misleading-array-reverse`             | <https://sonarsource.github.io/rspec/#/rspec/S4043/javascript> |
@@ -224,6 +228,7 @@ npm install -D eslint-plugin-sonar
 | `no-mixed-content`                        | <https://sonarsource.github.io/rspec/#/rspec/S5730/javascript> |
 | `no-nested-assignment`                    | <https://sonarsource.github.io/rspec/#/rspec/S1121/javascript> |
 | `no-nested-conditional`                   | <https://sonarsource.github.io/rspec/#/rspec/S3358/javascript> |
+| `no-nested-functions`                     | <https://sonarsource.github.io/rspec/#/rspec/S2004/javascript> |
 | `no-nested-incdec`                        | <https://sonarsource.github.io/rspec/#/rspec/S881/javascript>  |
 | `no-os-command-from-path`                 | <https://sonarsource.github.io/rspec/#/rspec/S4036/javascript> |
 | `no-parameter-reassignment`               | <https://sonarsource.github.io/rspec/#/rspec/S1226/javascript> |
@@ -240,6 +245,7 @@ npm install -D eslint-plugin-sonar
 | `no-same-argument-assert`                 | <https://sonarsource.github.io/rspec/#/rspec/S5863/javascript> |
 | `no-self-compare`                         | <https://sonarsource.github.io/rspec/#/rspec/S6679/javascript> |
 | `no-tab`                                  | <https://sonarsource.github.io/rspec/#/rspec/S105/javascript>  |
+| `no-table-as-layout`                      | <https://sonarsource.github.io/rspec/#/rspec/S5257/javascript> |
 | `no-this-alias`                           | <https://sonarsource.github.io/rspec/#/rspec/S4327/javascript> |
 | `no-throw-literal`                        | <https://sonarsource.github.io/rspec/#/rspec/S3696/javascript> |
 | `no-try-promise`                          | <https://sonarsource.github.io/rspec/#/rspec/S4822/javascript> |
@@ -269,6 +275,7 @@ npm install -D eslint-plugin-sonar
 | `no-wildcard-import`                      | <https://sonarsource.github.io/rspec/#/rspec/S2208/javascript> |
 | `non-number-in-arithmetic-expression`     | <https://sonarsource.github.io/rspec/#/rspec/S3760/javascript> |
 | `null-dereference`                        | <https://sonarsource.github.io/rspec/#/rspec/S2259/javascript> |
+| `object-alt-content`                      | <https://sonarsource.github.io/rspec/#/rspec/S5264/javascript> |
 | `object-shorthand`                        | <https://sonarsource.github.io/rspec/#/rspec/S3498/javascript> |
 | `operation-returning-nan`                 | <https://sonarsource.github.io/rspec/#/rspec/S3757/javascript> |
 | `os-command`                              | <https://sonarsource.github.io/rspec/#/rspec/S4721/javascript> |
@@ -278,6 +285,7 @@ npm install -D eslint-plugin-sonar
 | `prefer-for-of`                           | <https://sonarsource.github.io/rspec/#/rspec/S4138/javascript> |
 | `prefer-function-type`                    | <https://sonarsource.github.io/rspec/#/rspec/S6598/javascript> |
 | `prefer-namespace-keyword`                | <https://sonarsource.github.io/rspec/#/rspec/S4156/javascript> |
+| `prefer-nullish-coalescing`               | <https://sonarsource.github.io/rspec/#/rspec/S6606/javascript> |
 | `prefer-object-spread`                    | <https://sonarsource.github.io/rspec/#/rspec/S6661/javascript> |
 | `prefer-promise-shorthand`                | <https://sonarsource.github.io/rspec/#/rspec/S4634/javascript> |
 | `prefer-spread`                           | <https://sonarsource.github.io/rspec/#/rspec/S6666/javascript> |
@@ -289,6 +297,7 @@ npm install -D eslint-plugin-sonar
 | `pseudo-random`                           | <https://sonarsource.github.io/rspec/#/rspec/S2245/javascript> |
 | `public-static-readonly`                  | <https://sonarsource.github.io/rspec/#/rspec/S1444/javascript> |
 | `publicly-writable-directories`           | <https://sonarsource.github.io/rspec/#/rspec/S5443/javascript> |
+| `reduce-initial-value`                    | <https://sonarsource.github.io/rspec/#/rspec/S6959/javascript> |
 | `redundant-type-aliases`                  | <https://sonarsource.github.io/rspec/#/rspec/S6564/javascript> |
 | `regex-complexity`                        | <https://sonarsource.github.io/rspec/#/rspec/S5843/javascript> |
 | `regular-expr`                            | <https://sonarsource.github.io/rspec/#/rspec/S4784/javascript> |
@@ -326,6 +335,8 @@ npm install -D eslint-plugin-sonar
 | `strings-comparison`                      | <https://sonarsource.github.io/rspec/#/rspec/S3003/javascript> |
 | `super-invocation`                        | <https://sonarsource.github.io/rspec/#/rspec/S3854/javascript> |
 | `switch-without-default`                  | <https://sonarsource.github.io/rspec/#/rspec/S131/javascript>  |
+| `table-header`                            | <https://sonarsource.github.io/rspec/#/rspec/S5256/javascript> |
+| `table-header-reference`                  | <https://sonarsource.github.io/rspec/#/rspec/S5260/javascript> |
 | `test-check-exception`                    | <https://sonarsource.github.io/rspec/#/rspec/S5958/javascript> |
 | `todo-tag`                                | <https://sonarsource.github.io/rspec/#/rspec/S1135/javascript> |
 | `too-many-break-or-continue-in-loop`      | <https://sonarsource.github.io/rspec/#/rspec/S135/javascript>  |

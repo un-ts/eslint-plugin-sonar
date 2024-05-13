@@ -1,0 +1,13 @@
+diff --git a/node_modules/@1stg/eslint-config/base.js b/node_modules/@1stg/eslint-config/base.js
+index 7e927bd..52687bb 100644
+--- a/node_modules/@1stg/eslint-config/base.js
++++ b/node_modules/@1stg/eslint-config/base.js
+@@ -18,7 +18,7 @@ module.exports = {
+     'plugin:n/recommended',
+     'plugin:promise/recommended',
+     'plugin:regexp/recommended',
+-    'plugin:sonarjs/recommended',
++    // 'plugin:sonarjs/recommended',
+     isPkgAvailable('typescript') && 'plugin:sonar/recommended',
+     'plugin:unicorn/recommended',
+     'standard',

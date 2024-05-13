@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14.0
+
+### Minor Changes
+
+- [#134](https://github.com/un-ts/eslint-plugin-sonar/pull/134) [`a2e6a8e`](https://github.com/un-ts/eslint-plugin-sonar/commit/a2e6a8e2f5dec7d91dce397272ab72515fff01c5) Thanks [@JounQin](https://github.com/JounQin)! - feat: sync upstream and support tseslint v7
+
 ## 0.13.2
 
 ### Patch Changes

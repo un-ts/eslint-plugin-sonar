@@ -1,10 +1,11 @@
 // @ts-check
 
 import alias from '@rollup/plugin-alias'
+import json from '@rollup/plugin-json'
 import builtinModules from 'builtin-modules'
 import ts from 'rollup-plugin-ts'
 
-import pkg from './SonarJS/package.json' assert { type: 'json' }
+import pkg from './SonarJS/package.json' with { type: 'json' }
 
 const EXTERNALS = [...builtinModules, ...Object.keys(pkg.dependencies)]
 
@@ -52,6 +53,7 @@ const configs = /** @type {const} */ (['cjs', 'esm']).map(format => ({
         },
       ],
     }),
+    json(),
     ts({
       transpileOnly: true,
       tsconfig(resolvedConfig) {

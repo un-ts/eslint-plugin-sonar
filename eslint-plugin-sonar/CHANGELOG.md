@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.14.1
+
+### Patch Changes
+
+- [#136](https://github.com/un-ts/eslint-plugin-sonar/pull/136) [`64420fe`](https://github.com/un-ts/eslint-plugin-sonar/commit/64420fe0d1680bb6e435e3915823835372ce17c9) Thanks [@JounQin](https://github.com/JounQin)! - fix: use `builtinRules` instead of `Linter` API - close #133
+
+- [#136](https://github.com/un-ts/eslint-plugin-sonar/pull/136) [`64420fe`](https://github.com/un-ts/eslint-plugin-sonar/commit/64420fe0d1680bb6e435e3915823835372ce17c9) Thanks [@JounQin](https://github.com/JounQin)! - feat: support flat configs:
+
+  ```js
+  // eslint.config.js
+
+  import * as sonar from "eslint-plugin-sonar";
+
+  export default [...sonar.configs.flatRecommended];
+  ```
+
 ## 0.14.0
 
 ### Minor Changes

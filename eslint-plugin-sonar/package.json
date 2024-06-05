@@ -31,13 +31,13 @@
     "eslint-sonarjs"
   ],
   "peerDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.24.7",
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.0.0 || ^9.0.0",
     "typescript": "^4.0.0 || ^5.0.0"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.7",
     "@eslint-community/regexpp": "^4.10.0",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "builtin-modules": "^3.3.0",

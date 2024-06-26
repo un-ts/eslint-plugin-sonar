@@ -33,7 +33,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "eslint-define-config": "^2.1.0",
     "globals": "^15.2.0",
-    "minimatch": "^9.0.3",
+    "minimatch": "^9.0.5",
     "patch-package": "^8.0.0",
     "rollup": "^4.17.2",
     "rollup-plugin-ts": "^3.4.5",

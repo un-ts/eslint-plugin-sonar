@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14.2
+
+### Patch Changes
+
+- [#148](https://github.com/un-ts/eslint-plugin-sonar/pull/148) [`f81b834`](https://github.com/un-ts/eslint-plugin-sonar/commit/f81b8341e81c7cd4f622cccf94c3883a9d9fcdbc) Thanks [@JounQin](https://github.com/JounQin)! - fix: add missing/fix incorrect deps
+
 ## 0.14.1
 
 ### Patch Changes

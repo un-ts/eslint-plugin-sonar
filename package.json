@@ -64,7 +64,7 @@
     "eslint-plugin-sonar": "link:eslint-plugin-sonar",
     "eslint-plugin-sonarjs": "^1.0.3",
     "prettier": "^3.5.3",
-    "tmp": "^0.2.1"
+    "tmp": "^0.2.3"
   },
   "typeCoverage": {
     "atLeast": 100,

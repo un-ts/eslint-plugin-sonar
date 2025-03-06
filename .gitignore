@@ -1,3 +1,5 @@
+.yarn/*
+!.yarn/plugins
 .*cache
 .type-coverage
 node_modules

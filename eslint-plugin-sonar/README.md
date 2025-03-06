@@ -1,3 +1,11 @@
+# This plugin is deprecated!
+
+Please use the fresh new [`eslint-plugin-sonarjs`](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md) instead.
+
+Background context see also https://github.com/SonarSource/eslint-plugin-sonarjs#this-repository-has-moved
+
+---
+
 # eslint-plugin-sonar
 
 [ESLint](https://github.com/eslint/eslint) rules extracted from [SonarJS](https://github.com/SonarSource/SonarJS)

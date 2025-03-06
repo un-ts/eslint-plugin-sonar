@@ -49,7 +49,7 @@
     "eslint-plugin-sonarjs": "^1.0.3",
     "functional-red-black-tree": "^1.0.1",
     "jsx-ast-utils": "^3.3.5",
-    "minimatch": "^9.0.3",
+    "minimatch": "^9.0.5",
     "scslre": "^0.3.0",
     "tmp": "^0.2.3"
   },

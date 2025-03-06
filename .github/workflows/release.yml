@@ -17,6 +17,9 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Setup Node.js LTS
         uses: actions/setup-node@v4
         with:
@@ -24,7 +27,7 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: yarn --immutable
 
       # required for committing before releasing
       - name: Build

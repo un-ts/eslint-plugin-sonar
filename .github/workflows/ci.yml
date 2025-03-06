@@ -4,6 +4,10 @@ on:
   - push
   - pull_request
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   ci:
     name: Lint and Test with Node.js ${{ matrix.node }}
@@ -12,12 +16,16 @@ jobs:
         node:
           - 18
           - 20
+          - 22
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
           submodules: true
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Setup Node.js ${{ matrix.node }}
         uses: actions/setup-node@v4
@@ -26,7 +34,7 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies
-        run: yarn --frozen-lockfile --ignore-engines
+        run: yarn --immutable
 
       - name: Build, Lint and Test
         run: |

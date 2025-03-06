@@ -11,9 +11,9 @@
   ```js
   // eslint.config.js
 
-  import * as sonar from "eslint-plugin-sonar";
+  import * as sonar from 'eslint-plugin-sonar'
 
-  export default [...sonar.configs.flatRecommended];
+  export default [...sonar.configs.flatRecommended]
   ```
 
 ## 0.14.0
